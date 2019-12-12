@@ -1,0 +1,289 @@
+/* CSS Document */
+* {box-sizing: border-box;margin: 0;padding: 0;}
+body{font-size:14px;color:#707070; line-height:1.5;  margin:0 auto;font-family:Microsoft YaHei ;width:100%;height:100%; background: rgba(247, 247, 248);; text-align:center;overflow-x:hidden;}
+img{border:0;outline:0; vertical-align:middle;}
+/*a:hover img{filter:alpha(opacity=70);-moz-opacity:0.7; opacity: 0.7;}*/
+ul,li{list-style:none; list-style-type:none;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td{margin:0;padding:0;}
+/*address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}*/
+address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal;}
+header,nav,aside,menu{display:block;margin:0 auto;padding:0;}
+table{border-collapse:collapse;border-spacing:0;border:0;}
+table,td,tr,th{font-size:14px;border:0;}
+input:focus {outline: 0 none;}
+a:focus { outline: medium none;}
+a{text-decoration:none;cursor:pointer;}
+a:link{color:#707070;}
+a:visited{color:#707070;}
+a:hover{text-decoration: none;}
+.container a:hover{color:#e60012 !important;}
+fieldset,img{border:0;}
+/*h1,h2,h3,h4,h5,h6{font-size:14px;font-weight:normal;}*/
+a.mao{display:block;height:0;font-size:0;line-height:0;overflow:Hidden;}
+i{font-style:normal;display:inline-block;}
+/*u{text-decoration:none;display:inline-block;}*/
+/*em,strong,a,span{display:inline-block;}*/
+.tcen{text-align:center;}
+
+
+.clear{clear:both;line-height:0;font-size:0;overflow:hidden;display:block;}
+.blank10{clear:both;font-size:0px;line-height:0px;height:10px; margin:0px; padding:0px;}
+.blank15{clear:both;font-size:0px;line-height:0px;height:15px; margin:0px; padding:0px;}
+h1,h2,h3,h4,h5,h6{display:block;width:100%;margin:0 auto;font-family:"\5FAE\8F6F\96C5\9ED1"; font-weight:normal;}
+input,select,option,textarea{font-size:14px;color:#333333;outline:medium;font-family:"\5FAE\8F6F\96C5\9ED1" ;}
+.left{float:left;}
+.right{float:right;}
+.fy{font-family:"\5FAE\8F6F\96C5\9ED1"}
+.mt{margin-top:20px;}
+.mt10{margin-top:10px;}
+.mt5{margin-top:5px;}
+div,header,nav{margin:0 auto;text-align:left;}
+.main{width:980px;display:table;}
+.f12{font-size:12px;}
+.f14{font-size:14px;}
+.f18{font-size:18px;}
+.f15{font-size:15px;}
+.f16{font-size:16px;}
+.f24{font-size:24px;}
+.f30{font-size:30px;}
+.blo{display:block;}
+.bla,a.bla,.bla a:link,.bla a:visited{color:#000;}
+.bla a:hover{color:#e60012;}
+.layout{width: 1200px; margin: 0 auto;}
+
+/* 公共区域样式 */
+
+
+
+.check{
+  display: inline-block;
+  width: 151px;
+  height: 325px;
+  position: fixed;
+  top: 50%;
+  right:8px;
+  margin-top:-162.5px;
+  z-index: 9999;
+}
+/* head */
+.head {
+  max-width: 1920px;
+  position: relative;
+}
+.head-bg {
+  width:1920px;
+  position:absolute;
+  left:50%;
+  margin-left:-960px;
+  z-index: -1;
+}
+.head-info {
+  padding-top:210px;
+  height: 314px;
+}
+.head-info .logo {
+  display: block;
+}
+
+.nav {
+  width:100%;
+  height:60px;
+  background: url("../images/li_bjpt.png")
+}
+.nav>div>div{
+  width: 200px;
+  height: 26px;
+  float: right;
+  margin-top:17px;
+}
+.nav>div>div>div{
+  width: 151px;
+  height: 26px;
+  position: relative;
+  float: left;
+}
+.nav>div>div>div>input{
+  display:inline-block;
+  width: 151px;
+  height: 26px;
+  border-radius: 20px;
+  border:none;
+  padding-left:10px;
+  padding-right:25px;
+}
+.nav>div>div>div>img{
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top:50%;
+  right: 12px;
+  margin-top:-6px;
+}
+.nav>div>div>span{
+  float: right;
+  line-height: 26px;
+  color: #fff;
+}
+.active{
+  background: url("../images/li_bj.png");
+  background-size: 100% 100%;
+  font-weight: bold;
+  font-size: 20px !important;
+}
+.nav ul{
+  float: left;
+}
+.nav ul li {
+  display: inline-block;
+  width: 125px;
+  height: 60px;
+  text-align: center;
+  /* padding-left:30px;
+  padding-right:30px; */
+  position: relative;
+  margin-left:-5px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+.nav ul li:hover{
+  background: url("../images/li_bj.png");
+  background-size: 100% 100%;
+  font-weight: bold;
+  font-size: 20px;
+}
+.lis{
+  position: relative;
+}
+.nav ul li span{
+  width: 1px;
+  height: 15px;
+  background: #e4776b;
+  position : absolute;
+  right: -1px;
+  top: 50%;
+  margin-top:-7.5px;
+}
+.nav ul{
+  margin-left: 5px;
+}
+.nav ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  line-height: 60px;
+  color: #fff;
+  margin-left:0px;
+}
+.nav .nav_child{
+  width: 112px;
+  position: absolute;
+  top: 53px;
+  left: 50%;
+  margin-left: -56px;
+  z-index: 999;
+  display: none;
+}
+.nav .nav_child a:first-child{
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+}
+.nav .nav_child a:last-child{
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+}
+.nav .nav_child a{
+  display: inline-block;
+  width: 112px;
+  height: 43px;
+  text-align: center;
+  line-height: 43px;
+  background: #fff;
+  font-size: 16px;
+  color: #333333;
+}
+.nav .nav_child a:hover{
+  background: #fdccc9 !important;
+  color: #fa564b;
+}
+/* .actives{
+  background: #fdccc9 !important;
+  color: #fa564b;
+} */
+
+.foot {
+  max-width:1920px;
+  height:230px;
+  background:rgba(255,255,255,1);
+}
+.foot-content{
+  width: 100%;
+  height: 174px;
+  background: #fff;
+}
+.foot-content_name {
+  display: inline-block;
+  width:198px;
+  vertical-align: top;
+  margin-right: 100px;
+  padding-top: 54px;
+}
+.foot-content_name .p1 {
+  font-size:18px;
+  font-family:Microsoft YaHei;
+  color:rgba(34,34,34,1);
+  margin-bottom:5px;
+
+}
+.foot-content_name  .p2 {
+  font-size:12px;
+  font-family:Microsoft YaHei;
+  color:rgba(74,89,109,1);
+
+}
+.foot-content_addr {
+  display: inline-block;
+  width:213px;
+  font-size:14px;
+  font-family:Microsoft YaHei;
+  font-weight:400;
+  color:rgba(34,34,34,1);
+  line-height:24px;
+  vertical-align: top;
+  padding-top: 54px;
+}
+.foot-content_ewm {
+  width: 310px;
+  float: right;
+  padding-top: 40px;
+}
+.foot-content_ewm img {
+  display: block;
+  width: 310px;
+  height: 90px;
+}
+.foot-content_ewm span {
+  font-size:12px;
+  font-family:Microsoft YaHei;
+  font-weight:400;
+  color:rgba(51,51,51,1);
+  line-height:24px;
+  margin: 0 20px;
+}
+
+.foot-footer {
+  width:100%;
+  height:56px;
+  background:rgba(247,247,247,1);
+  opacity:0.99;
+  font-size:14px;
+  font-family:Microsoft YaHei;
+  font-weight:400;
+  color:rgba(94,106,122,1);
+  line-height:56px;
+  margin: 0 auto;
+  text-align: center;
+}
+.container {
+  min-height: calc(100vh - 550px);
+}

@@ -1,0 +1,102 @@
+.box {
+  background: #fff;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.box_nav {
+  height: 50px;
+  border-bottom: 1px solid #f1f1f1;
+  line-height: 50px;
+  padding: 0 27px;
+  color: rgba(102, 102, 102, 1);
+  font-size: 12px;
+}
+
+.box_nav span {
+  padding: 0 4px;
+  vertical-align: middle;
+  font-size: 12px;
+}
+
+.box_nav i {
+  display: inline-block;
+  background: url('../images/icon-home.png') no-repeat center;
+  background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  width: 22px;
+  height: 21px;
+  vertical-align: middle;
+  margin-right: -2px;
+}
+
+.box_header {
+  height: 97px;
+  width: 867px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f1f1f1;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.box_header h4 {
+  padding-top: 36px;
+  padding-bottom: 12px;
+  font-size: 22px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: rgba(68, 68, 68, 1);
+  line-height: 1;
+  text-align: center;
+}
+
+.box_header span {
+  font-size: 13px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+  line-height: 1;
+}
+
+.box_main {
+  width: 867px;
+  margin: 0 auto;
+  padding-top: 34px;
+  font-size: 16px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: rgba(68, 68, 68, 1);
+  line-height: 28px;
+}
+
+.box_foot {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  height: 24px;
+  width: 867px;
+  margin: 0 auto;
+}
+
+.share {
+  float: left;
+  width: 180px;
+  height: 24px;
+}
+
+.share img {
+  display: block;
+  width: 180px;
+  height: 24px;
+}
+
+.operation {
+  float: right;
+  font-size: 12px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+}
+
+.operation span {
+  line-height: 24px;
+}

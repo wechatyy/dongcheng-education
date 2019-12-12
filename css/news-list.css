@@ -1,0 +1,115 @@
+.box {
+  background: #fff;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.box_nav {
+  height: 50px;
+  border-bottom: 1px solid #f1f1f1;
+  line-height: 50px;
+  padding: 0 27px;
+  color: rgba(102, 102, 102, 1);
+  font-size: 12px;
+}
+
+.box_nav span {
+  padding: 0 4px;
+  vertical-align: middle;
+  font-size: 12px;
+}
+
+.box_nav i {
+  display: inline-block;
+  background: url('../images/icon-home.png') no-repeat center;
+  background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  width: 22px;
+  height: 21px;
+  vertical-align: middle;
+  margin-right: -2px;
+}
+
+
+.box_main {
+  padding: 0 52px;
+  margin: 0 auto;
+}
+
+.box_main .list {
+
+}
+.box_main .item {
+  border-bottom: 1px solid #f1f1f1;
+  padding: 15px 0;
+}
+.box_main .item .banner {
+  float: left;
+  width: 140px;
+  height: 88px;
+  background: #f1f1f1;
+
+}
+.box_main .item .item-main{
+  width: 100%;
+  padding-left: 156px;
+}
+.box_main .item .item-main h5 {
+  font-size:18px;
+  color:rgba(64,64,64,1);
+  line-height:1;
+  margin-bottom: 12px;
+  padding-top: 6px;
+}
+.box_main .item .item-main h5:hover{
+  color: #e60012;
+}
+.box_main .item .item-main .desc {
+  width: 843px;
+  font-size:16px;
+  color:rgba(102,102,102,1);
+  line-height:1;
+  margin-bottom: 15px;
+  overflow: hidden;/*超出部分隐藏*/
+  text-overflow:ellipsis;/* 超出部分显示省略号 */
+  white-space: nowrap;/*规定段落中的文本不进行换行 */
+}
+.box_main .item-bottom_time{
+  font-size:13px;
+  color:rgba(153,153,153,1);
+  line-height:1;
+}
+.box_main .item-bottom_source{
+  font-size:13px;
+  color:rgba(153,153,153,1);
+  line-height:1;
+  margin-left: 20px;
+}
+.box_main .item-bottom_share{
+  float: right;
+  width: 16px;
+  height: 22px;
+  background: url('../images//icon-share.png') no-repeat center;
+  background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+}
+.box_main .item-bottom_print{
+  float: right;
+  width: 20px;
+  height: 17px;
+  background: url('../images//icon-print.png') no-repeat center;
+  background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  margin-left: 22px;
+  margin-top: 2px;
+
+}
+
+.box_foot {
+  width: 1000px;
+  padding-top: 34px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+
+
