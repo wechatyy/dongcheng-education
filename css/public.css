@@ -50,7 +50,15 @@ div,header,nav{margin:0 auto;text-align:left;}
 .bla,a.bla,.bla a:link,.bla a:visited{color:#000;}
 .bla a:hover{color:#e60012;}
 .layout{width: 1200px; margin: 0 auto;}
-
+.clearfix::after,
+.clearfix::before{
+  content: ".";
+  line-height: 0;
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
 /* 公共区域样式 */
 
 
