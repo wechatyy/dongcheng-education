@@ -4,8 +4,7 @@
 ## story-list-more    ==== 图片故事_图片列表
 ## story-list         ==== 图片故事
 ## story-detail       ==== 图片详情_详情
-## news-list       ==== 教育头条_列表（UI待修复）
-## news-detail       ==== 教育头条_详情（UI待修复）
+
 
 # 页面更新
 
