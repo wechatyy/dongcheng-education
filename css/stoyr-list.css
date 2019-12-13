@@ -218,7 +218,11 @@ border-radius:50%;
   .section-main>a>p{
     text-align: left;
     font-size: 14px;
-	color: #333333;
+  color: #333333;
+  overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+
   }
   .section-main>a>p:hover{
     color: #e60012;

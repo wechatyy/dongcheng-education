@@ -60,6 +60,9 @@
   line-height:1;
   margin-bottom: 12px;
   padding-top: 6px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .box_main .item .item-main h5:hover{
   color: #e60012;

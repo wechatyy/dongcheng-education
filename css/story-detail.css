@@ -68,13 +68,113 @@
   color: rgba(68, 68, 68, 1);
   line-height: 28px;
 }
-.box_main_banner {
-  width:867px;
-  height:602px;
-  display: block;
-  background: #f1f1f1;
+
+
+
+
+.swiper-container {
+  width: 100%;
   margin: 0 auto;
 }
+
+.swiper-container .view_top .swiper-container {
+  width: 874px;
+  height: 602px;
+  margin: 0 !important;
+}
+.swiper-container .view_top .swiper-container img{
+  width: 874px;
+  height: 602px;
+}
+
+.swiper-container .view_top .arrow-left {
+  background: url(../images/feel2.png) no-repeat left top;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  margin-top: -30px;
+  width: 34px;
+  height: 60px;
+  z-index: 100;
+}
+
+.swiper-container .view_top .arrow-right {
+  background: url(../images/feel1.png) no-repeat left top;
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  margin-top: -30px;
+  width: 34px;
+  height: 60px;
+  z-index: 100;
+}
+
+.swiper-container .view_bottom {
+  width: 100%;
+  height: 147px;
+  background-color: #fafbfc;
+  padding-top:30px;
+  margin-top: 12px;
+  border-top:2px solid #f5f5f4;
+  border-bottom:2px solid #f5f5f4;
+  position: relative;
+}
+.swiper-container .view_bottom .swiper-wrapper{
+  width: 100% !important;
+}
+.swiper-container .view_bottom .swiper-container {
+  width: 805px;
+  height: 82px;
+  margin-left: 35px;
+}
+
+.swiper-container .view_bottom .swiper-slide {
+  width: 117px;
+  height: 82px;
+  margin-right: 20px;
+}
+.swiper-container .view_bottom .swiper-slide img{
+  width: 117px;
+  height: 82px;
+}
+
+.swiper-container .view_bottom .slide6 {
+  width: 117px;
+}
+
+.swiper-container .view_bottom .arrow-left {
+  background: url(../images/feel3.png) no-repeat left top;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -12px;
+  width: 12px;
+  height: 24px;
+  z-index: 10;
+}
+
+.swiper-container .view_bottom .arrow-right {
+  background: url(../images/feel4.png) no-repeat left bottom;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -12px;
+  width: 12px;
+  height: 24px;
+  z-index: 10;
+}
+
+.swiper-container .view_bottom img {
+  padding: 3px;
+}
+
+.swiper-container .view_bottom .active-nav img {
+  padding: 0;
+  border: 3px solid #fa564b;
+}
+
+
+
 
 .box_foot {
   padding-top: 40px;

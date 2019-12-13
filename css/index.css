@@ -235,6 +235,11 @@
 }
 .school .list .item .top a, 
 .education .list .item .top a {
+  display: inline-block;
+  width: 450px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   height: 22;
   line-height: 22px;
   font-size:18px;
@@ -258,7 +263,11 @@
 }
 .school .list .item .bottom span, 
 .education .list .item .bottom span{
-  width:221px;
+  display: inline-block;
+  width:500px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   font-size:12px;
   font-family:Microsoft YaHei;
   font-weight:400;
@@ -438,8 +447,7 @@
 .imgs_box{
   width: 555px;
 	height: 80px;
-	background-color: #000000;
-  opacity: 0.6;
+  background-color:rgb(0,0,0,0.5);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -453,11 +461,12 @@
   margin-left:21px;
   font-size: 30px;
   color: #cc191b;
-
+  font-style:oblique;
 }
 .imgs_box>p>span{
   color: #ffffff;
   font-size: 18px; 
+  font-style:oblique;
 }
 .imgs_box>div{
   width: 472px;
@@ -466,9 +475,8 @@
   margin-left:19px;
 }
 .imgs_box>div>p{
-  display: inline-block;
+  /* display: inline-block; */
   color: #fff;
-  /* float: left; */
   font-size: 18px;
   width: 100%;
   height: 20px;
@@ -476,12 +484,14 @@
   margin-bottom:5px;
 }
 .imgs_box>div>span{
-  display: inline-block;
+  /* display: inline-block;  */
   width: 100%;
   height: 20px;
   color: #fff;
-  /* float: left; */
   font-size: 14px;
+  /* overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; */
 }
 .mediums>div:nth-child(1){
   float: left;
@@ -513,6 +523,9 @@
   padding-left:20px;
   font-size: 16px;
   color: #ffffff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .medbox{
   width: 390px;
