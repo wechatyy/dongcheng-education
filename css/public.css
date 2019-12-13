@@ -60,9 +60,6 @@ div,header,nav{margin:0 auto;text-align:left;}
   clear: both;
 }
 /* 公共区域样式 */
-
-
-
 .check{
   display: inline-block;
   width: 151px;
@@ -295,3 +292,6 @@ div,header,nav{margin:0 auto;text-align:left;}
 .container {
   min-height: calc(100vh - 550px);
 }
+
+
+/* //卡片 */
