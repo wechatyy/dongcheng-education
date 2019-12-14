@@ -1,0 +1,237 @@
+.video_box{
+  width: 1200px;
+  margin-top: 20px;
+  position: relative;
+}
+.video{
+  width: 1200px;
+}
+video:focus {
+  outline-color: -webkit-focus-ring-color;
+  outline-style: auto;
+  outline-width: 0px !important;
+}
+.play{
+  display: none !important;
+}
+.stop{
+  display: block !important;
+}
+.video_box img{
+  display: inline-block;
+  width: 122px;
+  height: 97px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -61px;
+  margin-top: -35px;
+  cursor: pointer;
+}
+.video_tab{
+  width: 1200px;
+  height: 251px;
+  background-color: #ffffff;
+}
+.video_tab_head{
+  width: 1200px;
+  height: 55px;
+  border-bottom: 1px solid #fa534c;
+  padding-left: 21px;
+  padding-right: 20px;
+}
+.head_ul{
+  float: left;
+}
+.head_ul li{
+  display: inline-block;
+  width: 92px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+}
+.head_ul li a{
+  font-size: 18px;
+	font-weight: normal;
+  color: #333333;
+}
+.head_ul li a:hover{
+  color: #333333 !important;
+}
+.tab_active{
+  border-bottom: 3px solid #fa564f;
+}
+.section-more {
+  float: right;
+  vertical-align: middle;
+  font-size: 0;
+  margin-top : 23px;
+}
+.section-more a {
+  display: inline-block;
+}
+.section-more a span{
+  vertical-align: middle;
+  display: inline-block;
+  font-size:12px;
+  font-family:Microsoft YaHei;
+  font-weight:400;
+  color:rgba(51,51,51,1);
+  line-height:1;
+  vertical-align: middle;
+}
+.section-more img {
+  display: inline-block;
+  width: 10px;
+  height: 8px;
+  vertical-align: middle;
+}
+.video_tab_con{
+  width: 1200px;
+  height: 195px;
+  padding: 20px;
+}
+.video_tab_con .tab{
+  display: none;
+}
+.video_tab_con .tab:nth-child(1){
+  display: block;
+}
+.video_tab_con .tab div{
+  display: inline-block;
+  width: 180px;
+  float: left;
+  margin-left: 20px;
+}
+.video_tab_con .tab div:first-child{
+  margin-left: 0px;
+}
+.video_tab_con .tab div:last-child{
+  width: 160px;
+}
+.video_tab_con .tab div a:first-child{
+  display: inline-block;
+  width: 100%;
+	height: 100px;
+  background-color: #ccc;
+  cursor: pointer;
+}
+.video_tab_con .tab div a:last-child{
+  display: inline-block;
+  width: 100%;
+	font-size: 14px;
+  color: #333333;
+  overflow: hidden;
+  margin-top: 10px;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.section {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  background: #fff;
+  width:1200px;
+  box-shadow:0px 3px 20px 0px rgba(61,61,61,0.06);
+}
+.section-title {
+  width: 100%;
+  height: 55px;
+  padding: 0;
+  padding: 12px 20px 10px 25px;
+  border-bottom: 1px solid rgba(250,83,76,1);
+  position: relative;
+  z-index: auto;
+}
+.tops{
+  display: inline-block;
+  width: 84px;
+  height: 51px;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 1;
+}
+.section-title-line {
+  height: 32px;
+  width: 3px;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+  z-index: 2;
+  position: relative;
+
+}
+.section-title__main {
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 2;
+  position: relative;
+}
+.section-title__main h5 {
+  font-size:18px;
+  font-family:MicrosoftYaHei;
+  font-weight:bold;
+  color: #333333;
+  line-height:1;
+  margin-bottom: 4px;
+}
+.section-title__main p {
+  font-size:12px;
+  font-family:Microsoft YaHei;
+  font-weight:400;
+  color:rgba(153,153,153,1);
+  line-height:1;
+}
+.section-main{
+    width: 100%;
+    height: 235px;
+    padding:20px 20px 30px 20px;
+}
+.section-main>a:first-child{
+  margin-left:0px;   
+}
+.section-main>a{
+  display: inline-block;
+  float: left;
+  margin-left:20px;
+}
+
+.section-main>a> div{
+  width: 275px;
+  height: 154px;
+  margin-bottom:14px;
+  position: relative;
+}
+.section-main>a> div img:nth-child(1){
+  display: inline-block;
+  background: #f1f1f1;
+  width: 275px;
+  height: 154px;
+}
+.section-main>a> div .play_icons{
+  display: inline-block;
+  width: 122px;
+  height: 97px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -61px;
+  margin-top: -35px;
+}
+.section-main>a>p{
+  text-align: left;
+  font-size: 14px;
+  color: #333333;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.section-main>a>p:hover{
+  color: #e60012;
+}
