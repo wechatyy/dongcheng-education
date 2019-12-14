@@ -287,3 +287,12 @@ div,header,nav{margin:0 auto;text-align:left;}
 .container {
   min-height: calc(100vh - 550px);
 }
+.clearfix::after,
+.clearfix::before{
+  content: ".";
+  line-height: 0;
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
