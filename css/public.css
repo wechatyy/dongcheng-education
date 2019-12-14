@@ -38,7 +38,6 @@ input,select,option,textarea{font-size:14px;color:#333333;outline:medium;font-fa
 .mt10{margin-top:10px;}
 .mt5{margin-top:5px;}
 div,header,nav{margin:0 auto;text-align:left;}
-.main{width:980px;display:table;}
 .f12{font-size:12px;}
 .f14{font-size:14px;}
 .f18{font-size:18px;}
@@ -294,4 +293,3 @@ div,header,nav{margin:0 auto;text-align:left;}
 }
 
 
-/* //卡片 */
