@@ -244,14 +244,6 @@
 
             $('.box_foot .box_foot_text').removeClass('active-nav')
             var activeNav = $('.box_foot .box_foot_text').eq(viewSwiper.activeIndex).addClass('active-nav')
-            if (!activeNav.hasClass('swiper-slide-visible')) {
-                if (activeNav.index() > previewSwiper.activeIndex) {
-                    var thumbsPerNav = Math.floor(previewSwiper.width / activeNav.width()) - 1
-                    previewSwiper.swipeTo(activeNav.index() - thumbsPerNav)
-                } else {
-                    previewSwiper.swipeTo(activeNav.index())
-                }
-            }
         }
     </script>
     <script>
