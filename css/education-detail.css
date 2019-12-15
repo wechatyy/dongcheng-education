@@ -46,7 +46,7 @@
   font-family: Microsoft YaHei;
   font-weight: 400;
   color: rgba(68, 68, 68, 1);
-  line-height: 1;
+  line-height: 1.2;
   text-align: center;
 }
 
@@ -55,7 +55,7 @@
   font-family: Microsoft YaHei;
   font-weight: 400;
   color: rgba(153, 153, 153, 1);
-  line-height: 1;
+  line-height: 1.2;
 }
 
 .box_main {
@@ -94,7 +94,7 @@
   font-family:MicrosoftYaHei;
   font-weight:bold;
   color:#f04e43;
-  line-height:1;
+  line-height: 1.2;
   margin-bottom: 4px;
 }
 .section-title__main p {
@@ -102,7 +102,7 @@
   font-family:Microsoft YaHei;
   font-weight:400;
   color:rgba(153,153,153,1);
-  line-height:1;
+  line-height: 1.2;
 }
 .section-more {
   float: right;
@@ -120,7 +120,7 @@
   font-family:Microsoft YaHei;
   font-weight:400;
   color:rgba(51,51,51,1);
-  line-height:1;
+  line-height: 1.2;
   vertical-align: middle;
 }
 .section-more img {
@@ -134,7 +134,7 @@
   margin-top: 18px;
   font-size:16px;
   color:rgba(68,68,68,1);
-  line-height:1;
+  line-height: 1.2;
   padding-left: 18px;
   position: relative;
 }

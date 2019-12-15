@@ -159,7 +159,7 @@
   font-family: MicrosoftYaHei;
   font-weight: bold;
   color: #f04e43;
-  line-height: 1;
+  line-height: 1.2;
   margin-bottom: 4px;
 }
 
@@ -168,7 +168,7 @@
   font-family: Microsoft YaHei;
   font-weight: 400;
   color: rgba(153, 153, 153, 1);
-  line-height: 1;
+  line-height: 1.2;
 }
 
 .section-more {
@@ -191,7 +191,7 @@
   font-family: Microsoft YaHei;
   font-weight: 400;
   color: rgba(51, 51, 51, 1);
-  line-height: 1;
+  line-height: 1.2;
   vertical-align: middle;
 }
 

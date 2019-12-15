@@ -57,7 +57,7 @@
 .box_main .item .item-main h5 {
   font-size:18px;
   color:rgba(64,64,64,1);
-  line-height:1;
+  line-height: 1.2;
   margin-bottom: 12px;
   padding-top: 6px;
   overflow: hidden;
@@ -71,7 +71,7 @@
   width: 843px;
   font-size:16px;
   color:rgba(102,102,102,1);
-  line-height:1;
+  line-height: 1.2;
   margin-bottom: 15px;
   overflow: hidden;/*超出部分隐藏*/
   text-overflow:ellipsis;/* 超出部分显示省略号 */
@@ -80,12 +80,12 @@
 .box_main .item-bottom_time{
   font-size:13px;
   color:rgba(153,153,153,1);
-  line-height:1;
+  line-height: 1.2;
 }
 .box_main .item-bottom_source{
   font-size:13px;
   color:rgba(153,153,153,1);
-  line-height:1;
+  line-height: 1.2;
   margin-left: 20px;
 }
 .box_main .item-bottom_share{
