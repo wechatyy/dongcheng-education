@@ -11,55 +11,60 @@
 	<link rel="stylesheet" href="./css/public.css" />
 	<link rel="stylesheet" href="./css/jquery.page.css" />
 	<link rel="stylesheet" href="./css/medium.css" />
-	<style>
-		
-	</style>
 </head>
 
 <body>
-	<a href="javascript:;">
-		<img class="check" src="./images/check.png" alt="">
-	</a>	
-	<div class="head">
-
+    <!-- 侧边栏 -->
+  <a href="javascript:;">
+			<img class="check" src="./images/check.png" alt="">
+	</a>
+  <!-- 导航 -->
+  <div class="head">
 		<div class="head-bg">
-			<img src="./images/banner.png" alt="">
+				<img src="./images/banner.png" alt="">
 		</div>
 		<div class="head-info layout">
-			<img src="./images/LOGO@2x.png" class="logo" />
+				<img src="./images/LOGO@2x.png" class="logo" />
 		</div>
-		
 		<div class="nav">
-			<div class="layout">
-				<ul id="uls">
-					<li><a href="index.html">首页</a><span></span></li>
-					<li><a href="javascript:;">党建</a><span></span></li>
-					<li><a href="javascript:;">教育头条</a><span></span></li>
-					<li><a href="javascript:;">校园动态</a><span></span></li>
-					<li id="lis">
-						<a href="javascript:;">东教视频</a>
-						<span></span>
-						<div id="liss" class="nav_child">
-							<a href="javascript:;">师者印象</a>
-							<a href="javascript:;">东方教育</a>
-							<a href="javascript:;">歌华有线</a>
-							<a href="javascript:;">百年来校</a>
-							<a href="javascript:;">直播</a>
+				<div class="layout">
+						<ul id="uls">
+								<li><a href="index.html">首页</a><span></span></li>
+								<li><a href="javascript:;">党建</a><span></span></li>
+								<li><a href="education-list.html">教育头条</a><span></span></li>
+								<li><a href="school-list.html">校园动态</a><span></span></li>
+								<li id="video-nav">
+										<a href="video.html">东教视频</a>
+										<span></span>
+										<div id="video-nav-item" class="nav_child">
+												<a href="javascript:;">师者印象</a>
+												<a href="javascript:;">东方教育</a>
+												<a href="javascript:;">歌华有线</a>
+												<a href="javascript:;">百年来校</a>
+												<a href="javascript:;">直播</a>
+										</div>
+								</li>
+								<li id="story-nav">
+										<a href="story-list.html">图片故事</a>
+										<span></span>
+										<div id="story-nav-item" class="nav_child">
+												<a href="javascript:;">魅力校园</a>
+												<a href="javascript:;">名师名校长</a>
+												<a href="javascript:;">图片新闻</a>
+										</div>
+								</li>
+								<li><a href="medium-download-doc.html">媒介素养</a></li>
+						</ul>
+						<div>
+								<div>
+										<input type="text">
+										<a class="search" href="javascript:;"><img src="./images/search_icon.png" alt=""></a>
+								</div>
+								<a class="login" href="javascript:;">登录</a>
 						</div>
-					</li>
-					<li><a href="stoyr-list.html">图片故事</a><span></span></li>
-					<li><a href="javascript:;">媒介素养</a></li>
-				</ul>
-				<div>
-					<div>
-						<input type="text">
-						<img src="./images/search_icon.png" alt="">
-					</div>
-					<span>登录</span>
 				</div>
-			</div>
 		</div>
-	</div>
+</div>
 	<div class="container layout">
 		<!-- 公用 tab-head -->
 		<ul class="heads" id="heads">
@@ -92,9 +97,9 @@
 				<a href="javascript:;" class="tit_active">下载中心</a>
 				<span class="span_block"></span>
 				<div class="nav_two" id="nav_two">
-					<div><a href="download-file.html">文档下载</a></div>
-					<div><a href="download-img.html">图片下载</a></div>
-					<div><a href="download-video.html">视频下载</a></div>
+					<div><a href="medium-download-file.html">文档下载</a></div>
+					<div><a href="medium-download-img.html">图片下载</a></div>
+					<div><a href="medium-download-video.html">视频下载</a></div>
 				</div>
 			</li>
 		</ul>
@@ -334,14 +339,23 @@
             }
         }
         
-        var Lis=document.getElementById('lis');
-        var Liss=document.getElementById('liss');
-        Lis.onmouseover=function (){
-            Liss.style.display = "block";
-        };
-        Lis.onmouseout = function(){
-            Liss.style.display = "none";
-		}
+				var videoNav=document.getElementById('video-nav');
+				var videoNavItem=document.getElementById('video-nav-item');
+				videoNav.onmouseover=function (){
+						videoNavItem.style.display = "block";
+				};
+				videoNav.onmouseout = function(){
+						videoNavItem.style.display = "none";
+				}
+
+				var storyNav=document.getElementById('story-nav');
+				var storyNavItem=document.getElementById('story-nav-item');
+				storyNav.onmouseover=function (){
+						storyNavItem.style.display = "block";
+				};
+				storyNav.onmouseout = function(){
+						storyNavItem.style.display = "none";
+				}
 
 
 
@@ -374,6 +388,7 @@
         nav_item.onmouseout = function(){
             nav_two.style.display = "none";
 		}
+
 	});
 </script>
 </html>

@@ -299,10 +299,10 @@
   padding: 20px 18px;
   border-bottom:1px dashed rgba(226,226,226,1);
 }
-.school .school-nav__item{
+.school-nav .school-nav__item{
   display: inline-block;
 }
-.school .school-nav__item:last-child {
+.school-nav .school-nav__item:nth-child(2) {
   margin-left: 22px;
 }
 .school .school-nav__item img {

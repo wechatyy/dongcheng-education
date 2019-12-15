@@ -1,6 +1,6 @@
 /* CSS Document */
 * {box-sizing: border-box;margin: 0;padding: 0;}
-body{background: url("../images/backgrounds.png");background-size: 100% 100%;;font-size:14px;color:#707070; line-height:1.5;  margin:0 auto;font-family:Microsoft YaHei ;width:100%;height:100%; background: rgba(247, 247, 248);; text-align:center;overflow-x:hidden;}
+body{background: url("../images/backgrounds.png");background-size: 100% 100%;font-size:14px;color:#707070; line-height:1.5;  margin:0 auto;font-family:Microsoft YaHei ;width:100%;height:100%; background: rgba(247, 247, 248);; text-align:center;overflow-x:hidden;}
 img{border:0;outline:0; vertical-align:middle;}
 /*a:hover img{filter:alpha(opacity=70);-moz-opacity:0.7; opacity: 0.7;}*/
 ul,li{list-style:none; list-style-type:none;}
@@ -111,7 +111,7 @@ div,header,nav{margin:0 auto;text-align:left;}
   padding-left:10px;
   padding-right:25px;
 }
-.nav>div>div>div>img{
+.nav>div>div .search{
   display: inline-block;
   width: 12px;
   height: 12px;
@@ -120,7 +120,13 @@ div,header,nav{margin:0 auto;text-align:left;}
   right: 12px;
   margin-top:-6px;
 }
-.nav>div>div>span{
+
+.nav>div>div .search>img{
+  display: block;
+  width: 12px;
+  height: 12px;
+}
+.nav>div>div .login{
   float: right;
   line-height: 26px;
   color: #fff;
