@@ -9,25 +9,23 @@
 	<meta name="keywords" content="东城区教育新闻网，东城教育新闻网，东城区教育新闻，东城教育新闻，东城新闻>" />
 	<title>东城区教育新闻网</title>
 	<link rel="stylesheet" href="./css/public.css" />
+	<link rel="stylesheet" href="./css/jquery.page.css" />
 	<link rel="stylesheet" href="./css/medium.css" />
-	<style>
-		body{
-			background: url("./images/backgrounds.png");
-			background-size: 100% 100%;
-		}
-	</style>
 </head>
+
 <body>
 	<a href="javascript:;">
 		<img class="check" src="./images/check.png" alt="">
-	</a>
+	</a>	
 	<div class="head">
+
 		<div class="head-bg">
 			<img src="./images/banner.png" alt="">
 		</div>
 		<div class="head-info layout">
 			<img src="./images/LOGO@2x.png" class="logo" />
 		</div>
+		
 		<div class="nav">
 			<div class="layout">
 				<ul id="uls">
@@ -60,34 +58,91 @@
 		</div>
 	</div>
 	<div class="container layout">
-		<div class="tabBar clearfix">
-			<div class="tabBar-item">
+		<!-- 公用 tab-head -->
+		<ul class="heads" id="heads">
+			<li>
 				<a href="javascript:;">学院介绍</a>
-			</div>
-			<div class="tabBar-item">
+				<i></i>
+				<span></span>
+			</li>
+			<li>
 				<a href="javascript:;">合作单位</a>
-			</div>
-			<div class="tabBar-item">
+				<i></i>
+				<span></span>
+			</li>
+			<li>
 				<a href="javascript:;">课程介绍</a>
+				<i></i>
+				<span></span>
+			</li>
+			<li>
+				<a href="javascript:;">教师团队</a>
+				<i></i>
+				<span></span>
+			</li>
+			<li>
+				<a href="javascript:;">成果展示</a>
+				<i></i>
+				<span></span>
+			</li>
+			<li  class="nav_item5" id="nav_item">
+				<a href="javascript:;" class="tit_active">下载中心</a>
+				<span class="span_block"></span>
+				<div class="nav_two" id="nav_two">
+					<div><a href="download-file.html">文档下载</a></div>
+					<div><a href="download-img.html">图片下载</a></div>
+					<div><a href="download-video.html">视频下载</a></div>
+				</div>
+			</li>
+		</ul>
+
+		<div class="box_con clearfix">
+			<div class="bannerss">
+				<img src="./images/down_file.png" alt="">
+				<p>文档下载</p>
 			</div>
-			<div class="tabBar-item">
-				<a href="javascipt:;">教师团队</a>
+			
+			<div class="table_box">
+				<table  cellspacing="0" cellpadding="0" border="1">
+					<tr>
+						<th>序号</th>
+						<th>标题</th>
+						<th>时间</th>
+						<th>操作</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>青少年近视治疗报告青少年近视治疗报告</td>
+						<td>2019-12-13</td>
+						<td>
+							<a href="javascript:;"><img src="./images/down.png" alt="">下载</a>
+						</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>青少年近视治疗报告青少年近视治疗报告</td>
+						<td>2019-12-13</td>
+						<td>
+							<a href="javascript:;"><img src="./images/down.png" alt="">下载</a>
+						</td>
+					</tr>
+				</table>
 			</div>
-			<div class="tabBar-item">
-				<a href="javascript:;">成功展示</a>
+
+
+			<!-- 分页 -->
+			<div class="pages">
+				<div class="box_foot">
+					<div id="page"></div>
+				</div>
 			</div>
-			<div class="tabBar-item">
-				<a href="javascript">下载中心</a>
-			</div>
-		</div>
-		<div class="main ">
 
 		</div>
-		
 	</div>
-	<div class="foot">
-		<div class="foot-content">
-			<div class="layout">
+	
+	<div class="foot clearfix">
+		<div class="foot-content clearfix">
+			<div class="layout clearfix">
 				<div class="foot-content_name">
 					<p class="p1">北京市东城区教育新闻网</p>
 					<p class="p2">Dongcheng EducationAL News</p>
@@ -104,7 +159,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="foot-footer ">
+		<div class="foot-footer clearfix">
 			COPYRIGHT (©) 2018 Dongcheng Education News Center
 		</div>
 	</div>
@@ -119,6 +174,7 @@
 			activeClass: "activP", //active 类样式定义
 			callBack: function (page) {}
 		});
+
 		var Uls=document.getElementById('uls');
         var Ulis=Uls.getElementsByTagName('li');
         var i,j;
@@ -139,7 +195,39 @@
         };
         Lis.onmouseout = function(){
             Liss.style.display = "none";
-        }
+		}
+
+
+
+
+		var heads=document.getElementById('heads');
+        var items=heads.getElementsByTagName('a');
+        var spans=heads.getElementsByTagName('span');
+        var i,j,m;
+        for(var i = 0; i<items.length; i++){   
+            items[i].index = i;
+            items[i].onclick = function(){
+                for(j=0;j<items.length;j++){
+					items[j].className="";
+				}
+				this.className+="tit_active";
+
+				for(m=0;m<spans.length;m++){
+					spans[m].className="";
+				}
+				spans[this.index].className="span_block";	
+            }
+		}
+
+		var nav_item=document.getElementById('nav_item');
+		var nav_two=document.getElementById('nav_two');
+		
+        nav_item.onmouseover=function (){
+            nav_two.style.display = "block";
+        };
+        nav_item.onmouseout = function(){
+            nav_two.style.display = "none";
+		}
 	});
 </script>
 </html>
