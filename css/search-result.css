@@ -1,0 +1,231 @@
+.banner{
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff;
+  opacity: 0.7;
+}
+.banner_box{
+  width: 1200px;
+  height: 80px;
+  background: url("../images/banner_serarch.png");
+  background-size: 100% 100%;
+}
+.banner_box>div{
+  width: 340px;
+	height: 40px;
+	background-color: #ffffff;
+	border-radius: 20px;
+  border: solid 1px #c5c5c5;
+  float: left;
+  margin-top: 20px;
+  position: relative;
+  margin-left: 10px;
+}
+.banner_box>div>input{
+  display:inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border:none;
+  padding-left:22px;
+  padding-right:25px;
+}
+.banner_box div .search{
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top:50%;
+  right: 12px;
+  margin-top:-6px;
+}
+
+.banner_box div .search>img{
+  display: block;
+  width: 12px;
+  height: 12px;
+}
+.box {
+  background: #fff;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.section-title {
+  width: 100%;
+  height: 55px;
+  padding: 0;
+  padding: 12px 20px 10px 25px;
+  border-bottom: 1px solid rgba(250,83,76,1);
+  position: relative;
+  z-index: auto;
+}
+.tops{
+  display: inline-block;
+  width: 84px;
+  height: 51px;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 1;
+}
+.section-title-line {
+  height: 32px;
+  width: 6px;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+  z-index: 2;
+  position: relative;
+
+}
+.section-title__main {
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 2;
+  position: relative;
+}
+.section-title__main h5 {
+  font-size:18px;
+  font-family:MicrosoftYaHei;
+  font-weight:bold;
+  color:#f04e43;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+.section-title__main p {
+  font-size:12px;
+  font-family:Microsoft YaHei;
+  font-weight:400;
+  color:rgba(153,153,153,1);
+  line-height: 1.2;
+}
+.section-more {
+  float: right;
+  vertical-align: middle;
+  font-size: 0;
+  padding: 10px 0;
+}
+.section-more a {
+  display: inline-block;
+}
+.section-more a span{
+  vertical-align: middle;
+  display: inline-block;
+  font-size:12px;
+  font-family:Microsoft YaHei;
+  font-weight:400;
+  color:rgba(51,51,51,1);
+  line-height: 1.2;
+  vertical-align: middle;
+}
+.section-more img {
+  display: inline-block;
+  width: 10px;
+  height: 8px;
+  vertical-align: middle;
+}
+.box_main {
+  padding: 20px 20px 0px 20px;
+  margin: 0 auto;
+}
+
+.box_main .list {
+
+}
+.box_main .tits {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+	background-color: #fafafa;
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+  color: #000000;
+  text-align: left;
+  padding-left: 10px;
+}
+.box_main .tits span {
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	font-weight: normal;
+	letter-spacing: 0px;
+	color: #ef4136;
+}
+.box_main .item {
+  border-bottom: 1px solid #f1f1f1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.box_main .item .banner {
+  float: left;
+  width: 140px;
+	height: 106px;
+  background: #f1f1f1;
+
+}
+.box_main .item .item-main{
+  width: 100%;
+  padding-left: 160px;
+}
+.box_main .item .item-main h5 {
+  font-size:18px;
+  color:rgba(64,64,64,1);
+  line-height: 1.2;
+  margin-bottom: 12px;
+  padding-top: 6px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.box_main .item .item-main h5:hover{
+  color: #e60012;
+}
+.box_main .item .item-main .desc {
+  font-size:16px;
+  color:rgba(102,102,102,1);
+  line-height: 1.2;
+  margin-bottom: 22px;
+  overflow: hidden;/*超出部分隐藏*/
+  text-overflow:ellipsis;/* 超出部分显示省略号 */
+  white-space: nowrap;/*规定段落中的文本不进行换行 */
+}
+.box_main .item-bottom_time{
+  font-size:13px;
+  color:rgba(153,153,153,1);
+  line-height: 1.2;
+}
+.box_main .item-bottom_source{
+  font-size:13px;
+  color:rgba(153,153,153,1);
+  line-height: 1.2;
+  margin-left: 20px;
+}
+.box_main .item-bottom_share{
+  float: right;
+  width: 16px;
+  height: 22px;
+  background: url('../images//icon-share.png') no-repeat center;
+  background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+}
+.box_main .item-bottom_print{
+  float: right;
+  width: 20px;
+  height: 17px;
+  background: url('../images//icon-print.png') no-repeat center;
+  background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  margin-left: 22px;
+  margin-top: 2px;
+}
+/* // 分页css */
+.box_foot {
+  width: 1000px;
+  padding-top: 34px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+
+

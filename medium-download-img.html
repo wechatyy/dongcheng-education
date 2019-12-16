@@ -30,7 +30,7 @@
 				<div class="layout">
 						<ul id="uls">
 								<li><a href="index.html">首页</a><span></span></li>
-								<li><a href="javascript:;">党建</a><span></span></li>
+								<li><a href="party-lsit.html">党建</a><span></span></li>
 								<li><a href="education-list.html">教育头条</a><span></span></li>
 								<li><a href="school-list.html">校园动态</a><span></span></li>
 								<li id="video-nav">
@@ -53,7 +53,7 @@
 												<a href="javascript:;">图片新闻</a>
 										</div>
 								</li>
-								<li><a href="medium-download-doc.html">媒介素养</a></li>
+								<li class="active"><a href="medium-download-doc.html">媒介素养</a></li>
 						</ul>
 						<div>
 								<div>
@@ -67,7 +67,7 @@
 </div>
 	<div class="container layout">
 		<!-- 公用 tab-head -->
-		<ul class="heads" id="heads">
+		<ul class="heads">
 			<li>
 				<a href="javascript:;">学院介绍</a>
 				<i></i>
@@ -97,7 +97,7 @@
 				<a href="javascript:;" class="tit_active">下载中心</a>
 				<span class="span_block"></span>
 				<div class="nav_two" id="nav_two">
-					<div><a href="medium-download-file.html">文档下载</a></div>
+					<div><a href="medium-download-doc.html">文档下载</a></div>
 					<div><a href="medium-download-img.html">图片下载</a></div>
 					<div><a href="medium-download-video.html">视频下载</a></div>
 				</div>
@@ -310,6 +310,7 @@
 </body>
 <script type="text/javascript" src="./js/jquery.min.js"></script>
 <script type="text/javascript" src="./js/jquery.page.js"></script>
+<script type="text/javascript" src="./js/public.js"></script>
 <script type="text/javascript">
 	$(function () {
 		$("#page").Page({
@@ -318,77 +319,6 @@
 			activeClass: "activP", //active 类样式定义
 			callBack: function (page) {}
 		});
-
-		$("#page").Page({
-			totalPages: 9, //分页总数
-			liNums: 7, //分页的数字按钮数(建议取奇数)
-			activeClass: "activP", //active 类样式定义
-			callBack: function (page) {}
-		});
-
-		var Uls=document.getElementById('uls');
-        var Ulis=Uls.getElementsByTagName('li');
-        var i,j;
-        for(var i = 0; i<Ulis.length; i++){   
-            Ulis[i].index = i;
-            Ulis[i].onclick = function(){
-                for(j=0;j<Ulis.length;j++){
-                    Ulis[j].className="";
-                }
-                this.className+="active";
-            }
-        }
-        
-				var videoNav=document.getElementById('video-nav');
-				var videoNavItem=document.getElementById('video-nav-item');
-				videoNav.onmouseover=function (){
-						videoNavItem.style.display = "block";
-				};
-				videoNav.onmouseout = function(){
-						videoNavItem.style.display = "none";
-				}
-
-				var storyNav=document.getElementById('story-nav');
-				var storyNavItem=document.getElementById('story-nav-item');
-				storyNav.onmouseover=function (){
-						storyNavItem.style.display = "block";
-				};
-				storyNav.onmouseout = function(){
-						storyNavItem.style.display = "none";
-				}
-
-
-
-
-		var heads=document.getElementById('heads');
-        var items=heads.getElementsByTagName('a');
-        var spans=heads.getElementsByTagName('span');
-        var i,j,m;
-        for(var i = 0; i<items.length; i++){   
-            items[i].index = i;
-            items[i].onclick = function(){
-                for(j=0;j<items.length;j++){
-					items[j].className="";
-				}
-				this.className+="tit_active";
-
-				for(m=0;m<spans.length;m++){
-					spans[m].className="";
-				}
-				spans[this.index].className="span_block";	
-            }
-		}
-
-		var nav_item=document.getElementById('nav_item');
-		var nav_two=document.getElementById('nav_two');
-		
-        nav_item.onmouseover=function (){
-            nav_two.style.display = "block";
-        };
-        nav_item.onmouseout = function(){
-            nav_two.style.display = "none";
-		}
-
 	});
 </script>
 </html>

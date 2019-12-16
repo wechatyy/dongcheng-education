@@ -27,9 +27,9 @@
             <div class="layout">
                     <ul id="uls">
                             <li><a href="index.html">首页</a><span></span></li>
-                            <li><a href="javascript:;">党建</a><span></span></li>
+                            <li><a href="party-lsit.html">党建</a><span></span></li>
                             <li><a href="education-list.html">教育头条</a><span></span></li>
-                            <li><a href="school-list.html">校园动态</a><span></span></li>
+                            <li class="active"><a href="school-list.html">校园动态</a><span></span></li>
                             <li id="video-nav">
                                     <a href="video.html">东教视频</a>
                                     <span></span>
@@ -119,37 +119,10 @@
         </div>
         <div class="foot-footer ">COPYRIGHT (©) 2018 Dongcheng Education News Center</div>
     </div>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script type="text/javascript" src="./js/public.js"></script>
     <script>
-        var Uls=document.getElementById('uls');
-        var Ulis=Uls.getElementsByTagName('li');
-        var i,j;
-        for(var i = 0; i<Ulis.length; i++){   
-            Ulis[i].index = i;
-            Ulis[i].onclick = function(){
-                for(j=0;j<Ulis.length;j++){
-                    Ulis[j].className="";
-                }
-                this.className+="active";
-            }
-        }
-        
-		var videoNav=document.getElementById('video-nav');
-		var videoNavItem=document.getElementById('video-nav-item');
-		videoNav.onmouseover=function (){
-				videoNavItem.style.display = "block";
-		};
-		videoNav.onmouseout = function(){
-				videoNavItem.style.display = "none";
-		}
-
-		var storyNav=document.getElementById('story-nav');
-		var storyNavItem=document.getElementById('story-nav-item');
-		storyNav.onmouseover=function (){
-				storyNavItem.style.display = "block";
-		};
-		storyNav.onmouseout = function(){
-				storyNavItem.style.display = "none";
-		}
     </script>
 </body>
 </html>

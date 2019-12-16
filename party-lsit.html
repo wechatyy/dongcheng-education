@@ -8,14 +8,15 @@
 	<meta name="description" content="东城区教育新闻网，东城教育新闻网，东城区教育新闻，东城教育新闻，东城新闻>" />
 	<meta name="keywords" content="东城区教育新闻网，东城教育新闻网，东城区教育新闻，东城教育新闻，东城新闻>" />
 	<title>东城区教育新闻网</title>
-	<link rel="stylesheet" href="./css/public.css" />
-	<link rel="stylesheet" href="./css/news-list.css" />
+	<link rel="stylesheet" href="./css/swiper.min.css" />
 	<link rel="stylesheet" href="./css/jquery.page.css" />
+	<link rel="stylesheet" href="./css/public.css" />
+	<link rel="stylesheet" href="./css/education-list.css" />
 </head>
 
 <body>
-  <!-- 侧边栏 -->
-  <a href="javascript:;">
+    <!-- 侧边栏 -->
+    <a href="javascript:;">
 			<img  class="check" src="./images/check.png" alt="">
 	</a>
   <!-- 导航 -->
@@ -28,9 +29,9 @@
 		</div>
 		<div class="nav">
 				<div class="layout">
-						<ul id="uls">
+						<ul>
 								<li><a href="index.html">首页</a><span></span></li>
-								<li><a href="party-lsit.html">党建</a><span></span></li>
+								<li class="active"><a href="party-lsit.html">党建</a><span></span></li>
 								<li><a href="education-list.html">教育头条</a><span></span></li>
 								<li><a href="school-list.html">校园动态</a><span></span></li>
 								<li id="video-nav">
@@ -66,43 +67,77 @@
 		</div>
 </div>
 	<div class="container layout">
+			<!-- swiper -->
+			<div class="section-swiper">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="javascript:;">
+								<img  src="" alt="">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="javascript:;">
+								<img  src="" alt="">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="javascript:;">
+								<img  src="" alt="">
+							</a>
+						</div>
+					</div>
+					<!-- 导航按钮 -->
+					<!-- <div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div> -->
+					<!-- Add Pagination -->
+					<div class="pagination-wrap">
+						<div class="swiper-slide-title">2019年北京市教育研讨会在东城区开幕</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
 		<div class="box">
-			<div class="box_nav">
-				<i></i>
-				<span>首页</span>><span>信息列表</span>
+			<div class="section-title">
+				<img  class="tops" src="./images/tit_bj.png" alt="">
+				<img  src="./images/section-title-line.png" class="section-title-line"/>
+				<div class="section-title__main">
+						<h5>党建</h5>
+						<p>Party</p>
+				</div>
 			</div>
 			<div class="box_main">
 				<div class="list">
 					<div class="item">
-						<a href="news-detail.html"><img  class="banner" src="" alt="" /></a>
+						<a href="party-detail.html"><img  class="banner" src="" alt="" /></a>
 						<div class="item-main">
-							<a href="news-detail.html"><h5>“诵读老舍、爱我京华”老舍作品诵读会</h5></a>
+							<a href="party-detail.html"><h5>“诵读老舍、爱我京华”老舍作品诵读会</h5></a>
 							<p class="desc">
 								近期，灯市口小学优质教育资源带四至六年级举行了“诵读老舍、爱我京华”老舍作品诵读会。我们跟随诵读者的声音.收拾收拾是..
 							</p>
 							<div class="item-bottom">
 								<span class="item-bottom_time">2019-02-11 08:33</span>
 								<span class="item-bottom_source">北京午报</span>
-								<i class="item-bottom_print"></i>
-								<i class="item-bottom_share"></i>
+								<!-- <i class="item-bottom_print"></i>
+								<i class="item-bottom_share"></i> -->
 							</div>
 						</div>
 					</div>
 					<div class="item">
-							<a href="news-detail.html"><img  class="banner" src="" alt="" /></a>
-							<div class="item-main">
-								<h5>“诵读老舍、爱我京华”老舍作品诵读会</h5>
-								<p class="desc">
-									近期，灯市口小学优质教育资源带四至六年级举行了“诵读老舍、爱我京华”老舍作品诵读会。我们跟随诵读者的声音.收拾收拾是..
-								</p>
-								<div class="item-bottom">
-									<span class="item-bottom_time">2019-02-11 08:33</span>
-									<span class="item-bottom_source">北京午报</span>
-									<i class="item-bottom_print"></i>
-									<i class="item-bottom_share"></i>
-								</div>
+						<a href="party-detail.html"><img  class="banner" src="" alt="" /></a>
+						<div class="item-main">
+							<a href="party-detail.html"><h5>“诵读老舍、爱我京华”老舍作品诵读会</h5></a>
+							<p class="desc">
+								近期，灯市口小学优质教育资源带四至六年级举行了“诵读老舍、爱我京华”老舍作品诵读会。我们跟随诵读者的声音.收拾收拾是..
+							</p>
+							<div class="item-bottom">
+								<span class="item-bottom_time">2019-02-11 08:33</span>
+								<span class="item-bottom_source">北京午报</span>
+								<!-- <i class="item-bottom_print"></i>
+								<i class="item-bottom_share"></i> -->
 							</div>
 						</div>
+					</div>
 				</div>
 			</div>
 			<!-- 分页 -->
@@ -137,8 +172,32 @@
 </body>
 <script type="text/javascript" src="./js/jquery.min.js"></script>
 <script type="text/javascript" src="./js/jquery.page.js"></script>
+<script src="./js/swiper.min.js"></script>
+<script type="text/javascript" src="./js/public.js"></script>
 <script type="text/javascript">
 	$(function () {
+		var swiper = new Swiper(".swiper-container", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            loop: true, // 循环模式选项
+            speed: 2000, //匀速时间
+                autoplay: {
+                    delay: 0,
+                    stopOnLastSlide: false,
+                    disableOnInteraction: false,
+
+                },
+                autoplay: true,//可选选项，自动滑动
+                observer: true,
+                observeParents: true,
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
 		$("#page").Page({
 			totalPages: 9, //分页总数
 			liNums: 7, //分页的数字按钮数(建议取奇数)
