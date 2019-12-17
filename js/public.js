@@ -36,10 +36,13 @@ window.onload = function(){
     // 媒介素养-下载中心
     var nav_item=document.getElementById('nav_item');
     var nav_two=document.getElementById('nav_two');
-    nav_item.onmouseover=function (){
-        nav_two.style.display = "block";
-    };
-    nav_item.onmouseout = function(){
-        nav_two.style.display = "none";
+    if(nav_item) {
+        nav_item.onmouseover=function (){
+            nav_two.style.display = "block";
+        };
+        nav_item.onmouseout = function(){
+            nav_two.style.display = "none";
+        }
     }
+
 }

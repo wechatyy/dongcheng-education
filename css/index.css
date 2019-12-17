@@ -51,8 +51,8 @@
 .swiper-slide img,
 .swiper-slide a {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 590px;
+  height: 443px;
 }
 .swiper-slide img {
   background: #f1f1f1;
@@ -162,7 +162,6 @@
   font-weight:bold;
   color:#f04e43;
   line-height: 1.2;
-  margin-bottom: 4px;
 }
 .section-title__main p {
   font-size:12px;
@@ -183,9 +182,7 @@
 
 }
 .section-more a span{
-  vertical-align: middle;
   display: inline-block;
-
   font-size:12px;
   font-family:Microsoft YaHei;
   font-weight:400;
@@ -198,10 +195,9 @@
   width: 10px;
   height: 8px;
   vertical-align: middle;
+
 }
-.section-main {
-  
-}
+
 .school .list,
 .education .list {
   padding: 0 20px 20px;
@@ -235,12 +231,10 @@
 }
 .school .list .item .top a, 
 .education .list .item .top a {
-  display: inline-block;
-  width: 450px;
+  width: 425px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  height: 22;
   line-height: 22px;
   font-size:18px;
   font-family:Microsoft YaHei;
@@ -454,14 +448,13 @@
 }
 .imgs_box>p{
   display: inline-block;
-  width: 31px;
+  /* width: 31px; */
 	height: 27px;
   float: left;
   margin-top:40px;
   margin-left:21px;
   font-size: 30px;
   color: #cc191b;
-  font-style:oblique;
 }
 .imgs_box>p>span{
   color: #ffffff;
@@ -475,23 +468,28 @@
   margin-left:19px;
 }
 .imgs_box>div>p{
-  /* display: inline-block; */
+  display: inline-block;
   color: #fff;
   font-size: 18px;
   width: 100%;
-  height: 20px;
-  margin-top:30px;
-  margin-bottom:5px;
+  /* height: 20px; */
+  margin-top:20px;
+  margin-bottom:8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 1.2;
 }
 .imgs_box>div>span{
-  /* display: inline-block;  */
+  display: inline-block; 
   width: 100%;
   height: 20px;
   color: #fff;
   font-size: 14px;
-  /* overflow: hidden;
+  overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis; */
+  text-overflow: ellipsis;
+  line-height: 1.2;
 }
 .mediums>div:nth-child(1){
   float: left;
@@ -500,8 +498,24 @@
 .medium_one div:nth-child(1){
   width: 390px;
   height: 277px;
-  background: #f1f1f1;
+
   position: relative;
+}
+.medium_one_pic {
+  width: 390px;
+  height: 277px;
+  background: #f1f1f1;
+  display: block;
+}
+.play{
+  display: inline-block;
+  width: 85px;
+  height: 64px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -42.5px;
+  margin-top: -32px;
 }
 .play{
   display: inline-block;
@@ -519,13 +533,14 @@
   height: 66px;
   border-bottom:1px solid #ee635a;
   background: #ef4136;
-  padding-top:40px;
+  padding-top:30px;
   padding-left:20px;
   font-size: 16px;
   color: #ffffff;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  line-height: 1.2;
 }
 .medbox{
   width: 390px;
