@@ -66,18 +66,65 @@ div,header,nav{margin:0 auto;text-align:left;}
 .layout{width: 1200px; margin: 0 auto;}
 
 /* 公共区域样式 */
-
-
+body{
+  position: relative;
+}
+/* 侧边栏 */
+.boxs{
+  position: fixed;
+  width: 151px;
+  height: 299px;
+  background: red;
+  background: url("../images/check.png");
+  z-index: 9999;
+  right: 10px;
+  top: 300px;
+}
+.boxs>div{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.close{
+  display: inline-block;
+  width: 43px;
+  height: 23px;
+  background-color:rgba(0,0,0,0.5);
+  text-align: center;
+  line-height: 23px;
+  font-size: 12px;
+  position: absolute;
+  top:0;
+  right:0;
+  color: #fff !important;
+  cursor: pointer;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 7.5px;
+}
+.close:hover{
+  opacity: 1 !important;
+  background-color:#000 !important;
+  color: #fff;
+}
+.checks{
+  display: inline-block;
+  width: 137px;
+  height: 33px;
+  background: url("../images/checks.png");
+  color: #fff;
+  position: absolute;
+  bottom:20px;
+  left: 50%;
+  margin-left: -68.5px;
+  cursor: pointer;
+}
 .check{
   display: inline-block;
   width: 151px;
   height: 325px;
-  position: fixed;
-  top: 50%;
-  right:8px;
-  margin-top:-162.5px;
-  z-index: 9999;
 }
+/* 侧边栏 */
+
 /* head */
 .head {
   max-width: 1920px;
@@ -315,3 +362,70 @@ div,header,nav{margin:0 auto;text-align:left;}
   visibility: hidden;
   clear: both;
 }
+
+
+
+
+
+
+/* ***************** */
+/* swiper */
+.swiperBoxs{
+  width:100%;
+  height:100%;
+  /* overflow:hidden; */
+  position:relative;
+  margin-top: 30px;
+}
+.swiper-container {
+  width:100%;
+  height:100%;
+}
+.swiper-slide>img{
+  width: 100%;
+  height: 100%;
+  animation-duration:5s;
+  animation-timing-function:linear;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration:5s;
+  -webkit-animation-timing-function:linear;
+  -webkit-animation-fill-mode: forwards;
+}
+/* 标题BOX */
+.swiper-slide .detail{
+  width:100% !important;
+  height: 60px;
+  background:rgba(0,0,0,.7);
+  position:absolute;
+  width:100%;
+  bottom:0;
+  color:#fff;
+  transition:opacity .3s .3s;
+}
+.swiper-slide-active .detail{
+  opacity:1;
+}
+/* 标题 */
+.swiper-slide .detail>h1{
+  width:100%;
+  height: 60px;
+  color: rgba(255,255,255,1) !important;
+  text-align: left;
+  float: left;
+  padding-left: 20px;
+  line-height: 60px;
+  font-size:16px;
+}
+
+/* 底部按钮 */
+.swiper-pagination{
+  bottom:20px;
+  right:20px;
+}
+.swiper-pagination-bullet{
+  width:12px;
+  height:12px;
+  background:#fff !important;
+  margin:0 5px;
+}
+/* ***************** */

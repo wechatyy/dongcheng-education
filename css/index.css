@@ -409,35 +409,7 @@
   padding: 30px 20px;
 }
 
-.imgs .swiper-container {
-  width: 555px;
-  height: 430px;
-  margin: 0 auto;
-  position: relative;
-}
-.imgs .section-swiper {
-  width: 555px;
-  height: 430px;
-  margin-bottom: 30px;
-}
-.imgs .pagination-wrap {
-  width: 100%;
-  height: 80px;
-}
-.imgs{
-  width: 555px;
-  height: 430px;
-  margin: 0 auto;
-  position: relative;
-}
-.imgs img{
-  display: inline-block;
-  width: 555px;
-  height: 430px;
-  background: #f1f1f1;
-  margin: 0 auto;
-  position: relative;
-}
+/* 图片故事 */
 .imgs_box{
   width: 555px;
 	height: 80px;
@@ -445,14 +417,15 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  line-height: 0px !important;
 }
 .imgs_box>p{
   display: inline-block;
   /* width: 31px; */
 	height: 27px;
   float: left;
-  margin-top:40px;
-  margin-left:21px;
+  margin-top:15px;
+  margin-left:20px;
   font-size: 30px;
   color: #cc191b;
 }
@@ -484,6 +457,7 @@
   display: inline-block; 
   width: 100%;
   height: 20px;
+  line-height: 20px;
   color: #fff;
   font-size: 14px;
   overflow: hidden;
@@ -491,6 +465,8 @@
   text-overflow: ellipsis;
   line-height: 1.2;
 }
+/* 图片故事 */
+
 .mediums>div:nth-child(1){
   float: left;
   width: 390px;

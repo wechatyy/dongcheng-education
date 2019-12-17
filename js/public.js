@@ -44,5 +44,13 @@ window.onload = function(){
             nav_two.style.display = "none";
         }
     }
+    // 浮窗关闭
+    // 关闭
+    var close = document.getElementById('close');
+    if(close){
+        close.onclick = function(){
+            span.style.display = "none";
+        }
+    }
 
 }

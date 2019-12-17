@@ -11,13 +11,44 @@
     <link rel="stylesheet" href="./css/public.css" />
     <link rel="stylesheet" href="./css/swiper.min.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <style>
+        .swiperBox{
+            width:590px;
+            height:443px;
+            /* overflow:hidden; */
+            position:relative;
+            margin-bottom: 30px;
+        }
+        .swiperBox2{
+            width: 555px;
+            height: 430px;
+            /* overflow:hidden; */
+            position:relative;
+            margin-bottom: 30px;
+        }
+        /* 左右按钮 */
+        .swiper-button-next {
+            background: url("./images/feel1.png")  no-repeat center !important;
+            right: 0 !important;
+        }
+
+        .swiper-button-prev {
+            background: url("./images/feel2.png")  no-repeat center !important;
+            left: 0 !important;;
+        }
+    </style>
 </head>
 
 <body>
+    <!-- ******* -->
     <!-- 侧边栏 -->
-    <a href="javascript:;">
-        <img class="check" src="./images/check.png" alt="">
-    </a>
+    <div class="boxs" id="span">
+        <div>
+            <a href="javascript:;" class="close" id="close">关闭</a>
+            <a href="javascript:;" class="checks"></a>
+        </div>
+    </div>
+    <!-- ******* -->
     <!-- 导航 -->
     <div class="head">
         <div class="head-bg">
@@ -68,45 +99,46 @@
     <!-- 主体内容 -->
     <div class="container layout clear">
         <!-- banner -->
-        <div class="banner ">
+        <div class="banner">
             <a href="javascript:;">
                 <img src="./images/index-banner.png" alt="" />
             </a>
         </div>
-
-        <!-- swiper -->
-        <div class="section-swiper left">
+        <!-- ******* -->
+        <!-- Swiper -->
+        <div class="section swiperBox left">    
             <div class="swiper-container swiper1">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="javascript:;">
-                            <img src="" alt="">
-                        </a>
+                    <!-- item -->
+                    <div class="swiper-slide rightDownBig">
+                        <img src="images/slide3.jpg" />
+                        <div class="detail">
+                            <h1>1111111111</h1>
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <h1></h1>
-                        <a href="javascript:;">
-                            <img src="" alt="">
-                        </a>
+                    <!-- item -->
+                    <div class="swiper-slide rightDownBig">
+                        <img src="images/slide2.jpg" />
+                        <div class="detail">
+                            <h1>222222</h1>
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <a href="javascript:;">
-                            <img src="" alt="">
-                        </a>
+                    <!-- item -->
+                    <div class="swiper-slide rightDownBig">
+                        <img src="images/slide1.jpg" />
+                        <div class="detail">
+                            <h1>3333333</h1>
+                        </div>
                     </div>
-                </div>
-                <!-- 导航按钮 -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-                <!-- Add Pagination -->
-                <div class="pagination-wrap">
-                    <div class="swiper-slide-title">2019年北京市教育研讨会在东城区开幕1</div>
-                    <div class="swiper-slide-title">2019年北京市教育研讨会在东城区开幕2</div>
-                    <div class="swiper-slide-title">2019年北京市教育研讨会在东城区开幕3</div>
-                    <div class="swiper-pagination"></div>
                 </div>
             </div>
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
         </div>
+        <!-- ******* -->
 
         <!-- 教育头条 -->
         <div class="section education right">
@@ -288,32 +320,45 @@
             </div>
 
             <div class="section-main">
-                <!-- swiper -->
-                <div class="section-swiper imgs left">
+
+                <div class="section swiperBox2 left">    
                     <div class="swiper-container swiper2">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img  src="" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img  src="" alt="">
-                            </div>
-                        </div>
-                        <!-- Add Pagination -->
-                        <div class="pagination-wrap">
-                            <div class="imgs_box">
-                                <p>1<span>/5</span></p>
-                                <div>
-                                    <p>双胞胎姐姐患脑瘫 5岁妹妹教她认字</p>
-                                    <span>2018年10月21日，河南南阳市卧龙区一处出租房内，5岁的双胞胎姐妹坐在...</span>
+                            <div class="swiper-slide rightDownBig">
+                                <img src="images/slide3.jpg" />
+                                <div class="detail imgs_box">
+                                    <p>1<span>/3</span></p>
+                                    <div>
+                                        <p>11111</p>
+                                        <span>111111111111111</span>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="swiper-slide rightDownBig">
+                                <img src="images/slide2.jpg" />
+                                <div class="detail imgs_box">
+                                    <p>2<span>/3</span></p>
+                                    <div>
+                                        <p>22222</p>
+                                        <span>222222222</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide rightDownBig">
+                                <img src="images/slide1.jpg" />
+                                <div class="detail imgs_box">
+                                    <p>3<span>/3</span></p>
+                                    <div>
+                                        <p>3</p>
+                                        <span>333333333</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
+
             </div>
 
         </div>
@@ -391,27 +436,72 @@
     <script src="./js/swiper.min.js"></script>
     <script type="text/javascript" src="./js/public.js"></script>
     <script>
-        var swiper = new Swiper(".swiper1", {
-            pagination: {
-                el: ".swiper-pagination",
-            },
-            loop: true, // 循环模式选项
-            speed: 1000, //匀速时间
-            autoplay: {
-                delay: 0,
-                stopOnLastSlide: false,
-                disableOnInteraction: false,
+        window.onload=function(){
+            // ********
+            // 轮播
+            trList=['leftUp','moveRight','moveDown','centerBig','rightDownBig'];
+            var swiper = new Swiper('.swiper1',{
+                speed:500,
+                autoplay:4400,
+                autoplayDisableOnInteraction:false,
+                effect:'fade',
+                pagination : '.swiper-pagination',
+                paginationClickable :true,
+                // 如果需要前进后退按钮
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                onSlideChangeStart: function(swiper){
+                    nextSlide=swiper.slides.eq(swiper.activeIndex);
+                    nextSlide.addClass(trList[Math.floor(Math.random()*5)]);
+                },
+                onSlideChangeEnd: function(swiper){
+                    prevSlide=swiper.slides[swiper.previousIndex];
+                    prevSlide.className="swiper-slide";
+                },
+            });	
 
-            },
-            autoplay: true, //可选选项，自动滑动
-            observer: true,
-            observeParents: true,
-            // 如果需要前进后退按钮
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
+            trList=['leftUp','moveRight','moveDown','centerBig','rightDownBig'];
+            
+            var swiper = new Swiper('.swiper2',{
+                speed:500,
+                autoplay:4400,
+                autoplayDisableOnInteraction:false,
+                effect:'fade',
+                paginationClickable :true,
+                // 如果需要前进后退按钮
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });	
+
+
+            // 侧边特能吃
+            // 获取到需要拖拽的标签
+            var span = document.getElementById('span');
+            span.onmousedown = function(event){
+                var event = event || window.event;
+                var chaX = event.clientX - span.offsetLeft;
+                var clientWidth = document.body.clientWidth;
+                var chaY = event.clientY - span.offsetTop;
+                document.onmousemove = function(event){
+                    var event = event || window.event;
+                    span.style.right = clientWidth - event.clientX - chaX +'px';
+                    span.style.top = event.clientY - chaY + 'px';
+                }
+                document.onmouseup = function(){
+                    document.onmousemove = null;
+                }
+            }
+            // 关闭
+            var close = document.getElementById('close');
+            close.onclick = function(){
+                span.style.display = "none";
+            }
+            
+        }
     </script>
 </body>
 

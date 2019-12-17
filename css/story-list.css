@@ -83,32 +83,10 @@
   margin-left: 20px;
 }
 
-.swiper-pagination {
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-  z-index: 2;
-}
-
-.swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background: rgba(255, 255, 255, 1);
-  opacity: 0.5;
-  border-radius: 50%;
-  margin: 0 4px;
-}
-
-.swiper-pagination-bullet-active {
-  background: rgba(245, 67, 67, 1);
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-}
-
 /* /section */
 .section {
   margin-bottom: 30px;
+  margin-top: 30px;
   background: #fff;
   width: 1200px;
   /* height:443px; */
