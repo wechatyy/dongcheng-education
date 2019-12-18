@@ -46,10 +46,25 @@ window.onload = function(){
             nav_two.style.display = "none";
         }
     }
+
+    var span = document.getElementById('span');
+    span.onmousedown = function(event){
+        var event = event || window.event;
+        var chaX = event.clientX - span.offsetLeft;
+        var clientWidth = document.body.clientWidth;
+        var chaY = event.clientY - span.offsetTop;
+        document.onmousemove = function(event){
+            var event = event || window.event;
+            span.style.right = clientWidth - event.clientX - chaX +'px';
+            span.style.top = event.clientY - chaY + 'px';
+        }
+        document.onmouseup = function(){
+            document.onmousemove = null;
+        }
+    }
     // 浮窗关闭
     // 关闭
     var close = document.getElementById('close');
-    var span = document.getElementById('span');
     var localClose = localStorage.getItem('close')
     console.log(localClose);
     if(!localClose) {
