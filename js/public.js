@@ -1,4 +1,5 @@
 window.onload = function(){
+    console.log(1);
     // 导航
     // var Uls = document.getElementById('uls');
     // var Ulis = Uls.getElementsByTagName('li');
@@ -12,6 +13,7 @@ window.onload = function(){
     //         this.className = "active";
     //     }
     // }    
+
 
     // 东方视频
     var videoNav = document.getElementById('video-nav');
@@ -47,10 +49,18 @@ window.onload = function(){
     // 浮窗关闭
     // 关闭
     var close = document.getElementById('close');
+    var span = document.getElementById('span');
+    var localClose = localStorage.getItem('close')
+    console.log(localClose);
+    if(!localClose) {
+        span.style.display = "block";
+    }
     if(close){
         close.onclick = function(){
             span.style.display = "none";
+            localStorage.setItem('close','close')
         }
     }
+
 
 }

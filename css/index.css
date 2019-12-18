@@ -428,6 +428,7 @@
   margin-left:20px;
   font-size: 30px;
   color: #cc191b;
+  line-height: 1.2;
 }
 .imgs_box>p>span{
   color: #ffffff;
@@ -446,8 +447,8 @@
   font-size: 18px;
   width: 100%;
   /* height: 20px; */
-  margin-top:20px;
-  margin-bottom:8px;
+  margin-top:12px;
+  margin-bottom:5px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
