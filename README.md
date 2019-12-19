@@ -19,13 +19,16 @@
 ## medium-download-img         ==== 媒介素养_图片下载
 ## medium-download-video       ==== 媒介素养_视频下载
 ## medium-download-doc         ==== 媒介素养_文档下载
-## medium-show         ==== 媒介素养_首页（待完善）
 
-## news-list          ==== 信息列表
-## news-detail        ==== 信息详情
+
+## medium-show         ==== 媒介素养_首页（待完善）
+## news-list          ==== 信息列表 (多余页面)
+## news-detail        ==== 信息详情 (多余页面)
 
 ## party-list          ==== 党建列表
 ## party-detail        ==== 党建详情
+
+## search-result        ==== 搜索结果
 
 # 页面更新
 ## 12/12 新增【图片故事_图片列表】； 修复【图片详情_详情】

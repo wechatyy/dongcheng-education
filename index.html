@@ -59,7 +59,7 @@
         </div>
         <div class="nav">
             <div class="layout">
-                <ul>
+                <ul class="clearfix">
                     <li class="active"><a href="index.html">首页</a><span></span></li>
                     <li><a href="party-lsit.html">党建</a><span></span></li>
                     <li><a href="education-list.html">教育头条</a><span></span></li>
@@ -86,8 +86,8 @@
                     </li>
                     <li><a href="medium-download-doc.html">媒介素养</a></li>
                 </ul>
-                <div>
-                    <div>
+                <div class="clearfix">
+                    <div class="clearfix">
                         <input type="text">
                         <a class="search" href="search-result.html"><img src="./images/search_icon.png" alt=""></a>
                     </div>
@@ -131,10 +131,10 @@
                         </div>
                     </div>
                 </div>
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
-            <!-- 如果需要导航按钮 -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
             <!-- 如果需要分页器 -->
             <div class="swiper-pagination"></div>
         </div>
@@ -433,15 +433,14 @@
             COPYRIGHT (©) 2018 Dongcheng Education News Center
         </div>
     </div>
-    <script type="text/javascript" src="./js/jquery.min.js"></script>
     <script src="./js/swiper.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
     <script type="text/javascript" src="./js/public.js"></script>
     <script type="text/javascript">
         $(function () {
-            // ********
             // 轮播
             trList=['leftUp','moveRight','moveDown','centerBig','rightDownBig'];
-            var swiper = new Swiper('.swiper1',{
+            var swiper1 = new Swiper('.swiper1',{
                 speed:500,
                 autoplay:4400,
                 autoplayDisableOnInteraction:false,
@@ -449,10 +448,9 @@
                 pagination : '.swiper-pagination',
                 paginationClickable :true,
                 // 如果需要前进后退按钮
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+
                 onSlideChangeStart: function(swiper){
                     nextSlide=swiper.slides.eq(swiper.activeIndex);
                     nextSlide.addClass(trList[Math.floor(Math.random()*5)]);
@@ -463,21 +461,20 @@
                 },
             });	
 
-            trList=['leftUp','moveRight','moveDown','centerBig','rightDownBig'];
+            // trList=['leftUp','moveRight','moveDown','centerBig','rightDownBig'];
             
-            var swiper = new Swiper('.swiper2',{
+            var swiper2 = new Swiper('.swiper2',{
                 speed:500,
                 autoplay:4400,
                 autoplayDisableOnInteraction:false,
                 effect:'fade',
                 paginationClickable :true,
-                // 如果需要前进后退按钮
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
+                // // 如果需要前进后退按钮
+                // navigation: {
+                //     nextEl: '.swiper-button-next',
+                //     prevEl: '.swiper-button-prev',
+                // },
             });	
-
 
             // 侧边特能吃
             // 获取到需要拖拽的标签

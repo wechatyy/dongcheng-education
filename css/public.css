@@ -128,8 +128,12 @@ body{
 
 /* head */
 .head {
-  max-width: 1920px;
   position: relative;
+  background: url('../images/banner.png') no-repeat top center;
+  background-size: 1920px 314;
+  /* height: 374px; */
+  min-width: 1200px;
+  margin: 0 auto;
 }
 .head-bg {
   width:1920px;
@@ -137,6 +141,7 @@ body{
   left:50%;
   margin-left:-960px;
   z-index: -1;
+  display: none;
 }
 .head-info {
   padding-top:210px;
@@ -376,7 +381,7 @@ body{
   height:100%;
   /* overflow:hidden; */
   position:relative;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .swiper-container {
   width:100%;
@@ -426,7 +431,23 @@ body{
 .swiper-pagination-bullet{
   width:12px;
   height:12px;
-  background:#fff !important;
+  background:#fff ;
   margin:0 5px;
 }
+.swiper-pagination-bullet-active {
+  background:rgba(245,67,67,1);
+  width:12px;
+  height:12px;
+  border-radius:50%;
+}
 /* ***************** */
+        /* 左右按钮 */
+        .swiper-button-next {
+          background: url("../images/feel1.png")  no-repeat center !important;
+          right: 0 !important;
+      }
+
+      .swiper-button-prev {
+          background: url("../images/feel2.png")  no-repeat center !important;
+          left: 0 !important;;
+      }

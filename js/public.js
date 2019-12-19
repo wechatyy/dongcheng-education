@@ -66,7 +66,6 @@ window.onload = function(){
     // 关闭
     var close = document.getElementById('close');
     var localClose = localStorage.getItem('close')
-    console.log(localClose);
     if(!localClose) {
         span.style.display = "block";
     }
