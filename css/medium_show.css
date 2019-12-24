@@ -1,0 +1,138 @@
+/* 公用tab—head */
+.heads{
+  display: inline-block;
+  width:1200px;
+  height:82px;
+  background:rgba(255,255,255,1);
+  margin-top: 20px;
+  display: flex;
+}
+.heads li{
+  line-height: 82px;
+  text-align: center;
+  flex:1;
+  position: relative;
+}
+.heads li a{
+  font-size:16px;
+  font-family:Microsoft YaHei;
+  color:rgba(102,102,102,1);
+}
+.tit_active{
+  font-size:16px;
+  font-family:Microsoft YaHei;
+  font-weight:bold;
+  color:rgba(239,65,54,1) !important;
+}
+.heads li i{
+  display: inline-block;
+  width:2px;
+  height:15px;
+  background:rgba(224,224,224,1);
+  position: absolute;
+  top:50%;
+  right:0;
+  margin-top: -7.5px;
+}
+.heads li span{
+  display: inline-block;
+  width:63px;
+  height:2px;
+  background:rgba(239,65,54,1);
+  position: absolute;
+  bottom:0;
+  left:50%;
+  margin-left: -31.5px;
+  display: none;
+}
+.span_block{
+  display: block !important;
+}
+
+.nav_item5{
+  position: relative;
+  z-index: 2;
+}
+.nav_two{
+  width:107px;
+  height:138px;
+  background:rgba(255,255,255,1);
+  box-shadow:0px 5px 30px 0px rgba(51,51,51,0.2);
+  border-radius:8px;
+  position: absolute;
+  top: 58px;
+  left: 50%;
+  margin-left: -53.5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  display: none;
+}
+.nav_two div{
+  width: 100%;
+  height: 47px;
+  border-bottom:1px solid #E0E0E0;
+  text-align: center;
+  line-height: 47px;
+}
+.nav_two div:hover{
+  color: #e60012;
+}
+
+
+/* box */
+.box_con{
+  width: 1200px;
+  height: auto;
+  background:rgba(255,255,255,1);
+  box-shadow:0px 3px 20px 0px rgba(61,61,61,0.06);
+  margin-bottom: 60px;
+}
+
+.banners{
+  width:1200px;
+  height:410px;
+}
+
+.cons_box{
+  width: 1200px;
+  padding: 40px 160px 110px 160px;
+}
+.cons_box h1{
+	font-family: MicrosoftYaHei;
+	font-size: 30px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 40px;
+	letter-spacing: 0px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+.cons_box div{
+  width: 100%;
+  float: left;
+  margin-top:30px;
+  margin-bottom:30px;
+}
+.cons_box div img:first-child{
+  display: inline-block;
+  width: 430px;
+  height: 291px;
+  background: #cccccc;
+  float: left;
+}
+.cons_box div img:last-child{
+  display: inline-block;
+  width: 430px;
+  height: 291px;
+  background: #cccccc;
+  float: right;
+}
+.cons_box p{
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 24px;
+	letter-spacing: 0px;
+	color: #666666;
+}
