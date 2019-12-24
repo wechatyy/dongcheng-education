@@ -9,18 +9,20 @@
 	<meta name="keywords" content="东城区教育新闻网，东城教育新闻网，东城区教育新闻，东城教育新闻，东城新闻>" />
 	<title>东城区教育新闻网</title>
 	<link rel="stylesheet" href="./css/public.css" />
-	<link rel="stylesheet" href="./css/medium.css" />
+	<link rel="stylesheet" href="./css/jquery.page.css" />
+	<link rel="stylesheet" href="./css/medium_show.css" />
 </head>
+
 <body>
-  <!-- 侧边栏 -->
-	<div class="boxs" id="span">
-		<div>
-				<a href="javascript:;" class="close" id="close">关闭</a>
-				<a href="javascript:;" class="checks"></a>
-		</div>
-</div>
-  <!-- 导航 -->
-  <div class="head">
+    <!-- 侧边栏 -->
+    <div class="boxs" id="span">
+        <div>
+            <a href="javascript:;" class="close" id="close">关闭</a>
+            <a href="javascript:;" class="checks"></a>
+        </div>
+    </div>
+	<!-- 导航 -->
+	<div class="head">
 		<div class="head-bg">
 				<img  src="./images/banner.png" alt="">
 		</div>
@@ -29,7 +31,7 @@
 		</div>
 		<div class="nav">
 				<div class="layout">
-						<ul id="uls">
+						<ul >
 								<li><a href="index.html">首页</a><span></span></li>
 								<li><a href="party-lsit.html">党建</a><span></span></li>
 								<li><a href="education-list.html">教育头条</a><span></span></li>
@@ -54,7 +56,7 @@
 												<a href="javascript:;">图片新闻</a>
 										</div>
 								</li>
-								<li><a href="medium-download-doc.html">媒介素养</a></li>
+								<li class="active"><a href="medium-download-doc.html">媒介素养</a></li>
 						</ul>
 						<div>
 								<div>
@@ -67,35 +69,66 @@
 		</div>
 </div>
 	<div class="container layout">
-		<div class="tabBar clearfix">
-			<div class="tabBar-item">
-				<a href="javascript:;">学院介绍</a>
-			</div>
-			<div class="tabBar-item">
+		<!-- 公用 tab-head -->
+		<ul class="heads">
+			<li>
+				<a href="medium-show.html" class="tit_active">学院介绍</a>
+				<i></i>
+				<span class="span_block"></span>
+			</li>
+			<li>
 				<a href="javascript:;">合作单位</a>
-			</div>
-			<div class="tabBar-item">
+				<i></i>
+				<span></span>
+			</li>
+			<li>
 				<a href="javascript:;">课程介绍</a>
+				<i></i>
+				<span></span>
+			</li>
+			<li>
+				<a href="javascript:;">教师团队</a>
+				<i></i>
+				<span></span>
+			</li>
+			<li>
+				<a href="javascript:;">成果展示</a>
+				<i></i>
+				<span></span>
+			</li>
+			<li  class="nav_item5" id="nav_item">
+				<a href="javascript:;">下载中心</a>
+				<span></span>
+				<div class="nav_two" id="nav_two">
+					<div><a href="medium-download-doc.html">文档下载</a></div>
+					<div><a href="medium-download-img.html">图片下载</a></div>
+					<div><a href="medium-download-video.html">视频下载</a></div>
+				</div>
+			</li>
+		</ul>
+
+		<!-- 内容 -->
+		<div class="box_con clearfix">
+			<img class="banners" src="./images//medium_show_banner.png" alt="">
+			
+			<div class="cons_box">
+				<h1>这里是学院介绍标题</h1>
+				<p>这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息。</p>
+				<p>这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息。</p>
+				<div>
+					<img src="" alt="">
+					<img src="" alt="">
+				</div>
+				<p>这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息。</p>
+				<p>这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息，这里是文字介绍详情信息。</p>
 			</div>
-			<div class="tabBar-item">
-				<a href="javascipt:;">教师团队</a>
-			</div>
-			<div class="tabBar-item">
-				<a href="javascript:;">成功展示</a>
-			</div>
-			<div class="tabBar-item">
-				<a href="javascript">下载中心</a>
-			</div>
-		</div>
-		<div class="main medium">
-			<img  class="" src="" alt="">
 
 		</div>
-		
 	</div>
-	<div class="foot">
-		<div class="foot-content">
-			<div class="layout">
+	
+	<div class="foot clearfix">
+		<div class="foot-content clearfix">
+			<div class="layout clearfix">
 				<div class="foot-content_name">
 					<p class="p1">北京市东城区教育新闻网</p>
 					<p class="p2">Dongcheng EducationAL News</p>
@@ -112,7 +145,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="foot-footer ">
+		<div class="foot-footer clearfix">
 			COPYRIGHT (©) 2018 Dongcheng Education News Center
 		</div>
 	</div>
@@ -122,42 +155,7 @@
 <script type="text/javascript" src="./js/public.js"></script>
 <script type="text/javascript">
 	$(function () {
-		$("#page").Page({
-			totalPages: 9, //分页总数
-			liNums: 7, //分页的数字按钮数(建议取奇数)
-			activeClass: "activP", //active 类样式定义
-			callBack: function (page) {}
-		});
-		var Uls=document.getElementById('uls');
-        var Ulis=Uls.getElementsByTagName('li');
-        var i,j;
-        for(var i = 0; i<Ulis.length; i++){   
-            Ulis[i].index = i;
-            Ulis[i].onclick = function(){
-                for(j=0;j<Ulis.length;j++){
-                    Ulis[j].className="";
-                }
-                this.className+="active";
-            }
-        }
-        
-				var videoNav=document.getElementById('video-nav');
-		var videoNavItem=document.getElementById('video-nav-item');
-		videoNav.onmouseover=function (){
-				videoNavItem.style.display = "block";
-		};
-		videoNav.onmouseout = function(){
-				videoNavItem.style.display = "none";
-		}
 
-		var storyNav=document.getElementById('story-nav');
-		var storyNavItem=document.getElementById('story-nav-item');
-		storyNav.onmouseover=function (){
-				storyNavItem.style.display = "block";
-		};
-		storyNav.onmouseout = function(){
-				storyNavItem.style.display = "none";
-		}
 	});
 </script>
 </html>
