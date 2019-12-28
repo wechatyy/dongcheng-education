@@ -1,5 +1,4 @@
 window.onload = function(){
-    console.log(1);
     // 导航
     // var Uls = document.getElementById('uls');
     // var Ulis = Uls.getElementsByTagName('li');
@@ -36,13 +35,25 @@ window.onload = function(){
     }
 
     // 媒介素养-下载中心
-    var nav_item=document.getElementById('nav_item');
+    var nav_item3=document.getElementById('nav_item3');
+    var nav_one=document.getElementById('nav_one');
+    if(nav_item3) {
+        nav_item3.onmouseover=function (){
+            nav_one.style.display = "block";
+        };
+        nav_item3.onmouseout = function(){
+            nav_one.style.display = "none";
+        }
+    }
+
+    // 媒介素养-下载中心
+    var nav_item5=document.getElementById('nav_item5');
     var nav_two=document.getElementById('nav_two');
-    if(nav_item) {
-        nav_item.onmouseover=function (){
+    if(nav_item5) {
+        nav_item5.onmouseover=function (){
             nav_two.style.display = "block";
         };
-        nav_item.onmouseout = function(){
+        nav_item5.onmouseout = function(){
             nav_two.style.display = "none";
         }
     }

@@ -1,0 +1,225 @@
+/* 公用tab—head */
+.heads{
+  display: inline-block;
+  width:1200px;
+  height:82px;
+  background:rgba(255,255,255,1);
+  margin-top: 20px;
+  display: flex;
+}
+.heads li{
+  line-height: 82px;
+  text-align: center;
+  flex:1;
+  position: relative;
+}
+.heads li a{
+  font-size:16px;
+  font-family:Microsoft YaHei;
+  color:rgba(102,102,102,1);
+}
+.tit_active{
+  font-size:16px;
+  font-family:Microsoft YaHei;
+  font-weight:bold;
+  color:rgba(239,65,54,1) !important;
+}
+.heads li i{
+  display: inline-block;
+  width:2px;
+  height:15px;
+  background:rgba(224,224,224,1);
+  position: absolute;
+  top:50%;
+  right:0;
+  margin-top: -7.5px;
+}
+.heads li span{
+  display: inline-block;
+  width:63px;
+  height:2px;
+  background:rgba(239,65,54,1);
+  position: absolute;
+  bottom:0;
+  left:50%;
+  margin-left: -31.5px;
+  display: none;
+}
+.span_block{
+  display: block !important;
+}
+.nav_items{
+  position: relative;
+  z-index: 1;
+}
+.nav_items{
+  width:107px;
+  background:rgba(255,255,255,1);
+  box-shadow:0px 5px 30px 0px rgba(51,51,51,0.2);
+  border-radius:8px;
+  position: absolute;
+  top: 58px;
+  left: 50%;
+  margin-left: -53.5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  display: none;
+}
+
+.nav_items div{
+  width: 100%;
+  height: 47px;
+  border-bottom:1px solid #E0E0E0;
+  text-align: center;
+  line-height: 47px;
+}
+.nav_items div:hover{
+  color: #e60012;
+}
+
+/* box */
+.box_con{
+  width: 1200px;
+  height: auto;
+  background: #f9f9f9;
+  box-shadow:0px 3px 20px 0px rgba(61,61,61,0.06);
+  margin-bottom: 60px;
+}
+.con_box{
+  width: 880px;
+  margin: 0 auto;
+  padding-top:31px;
+  padding-bottom:60px;
+}
+
+.section-title{
+  width: 880px;
+  height: 42px;
+  border-bottom:1px solid #fa534c;
+  float: left;
+}
+.section-title img{
+  display: inline;
+  float: left;
+  width: 6px;
+  height: 32px;
+  margin-right: 10px;
+}
+.section-title_main{
+  float: left;
+}
+.section-title_main>span{
+	font-family: MicrosoftYaHei-Bold;
+	font-size: 18px;
+	font-weight: bold;
+	font-stretch: normal;
+	letter-spacing: 0px;
+  color: #ef4136;
+  padding-top: 0px;
+  line-height: 0px;
+}
+.section-title_main>p{
+	font-family: MicrosoftYaHei;
+	font-size: 12px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+  color: #999999;
+  margin-top: 0px;
+  line-height: 0px;
+  margin-top: 5px;
+}
+.information{
+  width: 100%;
+  height: auto;
+  float: left;
+}
+.information_left{
+  width: 270px;
+  float: left;
+}
+.information_right{
+  float: left;
+  width: 500px;
+  margin-bottom:58px;
+}
+.information>div>div{
+  float: left;
+  margin-top:40px;
+}
+.information>div>div>h3{
+  display: inline-block;
+  float: left;
+  width: 80px;
+	font-family: MicrosoftYaHei-Bold;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+  color: #999999;
+  text-align: right;
+}
+.information>div>div>span{
+  display: inline-block;
+  float: left;
+	font-family: MicrosoftYaHei;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #333333;
+}
+.information_left>div>span{
+  width: 170px;
+}
+.information_right>div>span{
+  width: 400px;
+}
+.txt{
+  display: inline-block;
+  float: left;
+  margin-top: 31px;
+  margin-bottom: 60px;
+  width: 879px;
+	font-family: MicrosoftYaHei;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 28px;
+	letter-spacing: 0px;
+	color: #333333;
+}
+.cucons{
+  width: 100%;
+  float: left;
+  margin-bottom: 71px;
+}
+.cucons>div{
+  margin-top:33px;
+  float: left;
+}
+.cucons>div>span{
+  display: inline-block;
+  width: 80px;
+	font-family: MicrosoftYaHei-Bold;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+  letter-spacing: 0px;
+	line-height: 30px;
+  
+  color: #999999;
+  float: left;
+}
+.cucons>div>ul{
+  float: left;
+  width: 510px;
+	height: 106px;
+	font-family: MicrosoftYaHei;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 30px;
+	letter-spacing: 0px;
+	color: #333333;
+}

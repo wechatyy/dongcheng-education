@@ -48,11 +48,6 @@
 .span_block{
   display: block !important;
 }
-
-.nav_item5{
-  position: relative;
-  z-index: 2;
-}
 .nav_items{
   position: relative;
   z-index: 1;
@@ -70,7 +65,7 @@
   padding-left: 10px;
   display: none;
 }
-.
+
 .nav_items div{
   width: 100%;
   height: 47px;
@@ -87,59 +82,63 @@
 .box_con{
   width: 1200px;
   height: auto;
-  background:rgba(255,255,255,1);
+  background:#f9f9f9;
   box-shadow:0px 3px 20px 0px rgba(61,61,61,0.06);
   margin-bottom: 60px;
+  padding: 5px;
 }
-.con_box{
-  background: #f9f9f9;
+.box_item{
+  width: 370px;
+	/* height: 355px; */
+	background-color: #ffffff;
+  border: solid 1px #eeeeee;
+  padding: 21px;
+  margin-top: 20px;
+  margin-left: 20px;
+  float: left;
 }
-.banners{
-  width:1200px;
-  height:410px;
+.box_item img{
+  display: inline-block;
+  width: 328px;
+	height: 184px;
+	background-color: #dadada;
 }
-
-.cons_box{
-  width: 1200px;
-  padding: 40px 160px 110px 160px;
-  background: #f9f9f9;
-}
-.cons_box h1{
-	font-family: MicrosoftYaHei;
-	font-size: 30px;
-	font-weight: normal;
+.box_item h1{
+  width: 100%;
+  overflow: hidden;/*超出部分隐藏*/
+  text-overflow:ellipsis;/* 超出部分显示省略号 */
+  white-space: nowrap;/*规定段落中的文本不进行换行 */
+	font-family: MicrosoftYaHei-Bold;
+	font-size: 16px;
+	font-weight: bold;
 	font-stretch: normal;
-	line-height: 40px;
 	letter-spacing: 0px;
   color: #333333;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
-.cons_box div{
+.box_item p{
   width: 100%;
-  float: left;
-  margin-top:30px;
-  margin-bottom:30px;
-}
-.cons_box div img:first-child{
-  display: inline-block;
-  width: 430px;
-  height: 291px;
-  background: #cccccc;
-  float: left;
-}
-.cons_box div img:last-child{
-  display: inline-block;
-  width: 430px;
-  height: 291px;
-  background: #cccccc;
-  float: right;
-}
-.cons_box p{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 	font-family: MicrosoftYaHei;
 	font-size: 14px;
 	font-weight: normal;
 	font-stretch: normal;
-	line-height: 24px;
+	/* line-height: 40px; */
 	letter-spacing: 0px;
-	color: #666666;
+  color: #666666;
+  margin-top: 15px;
+  
+}
+
+/* page */
+.box_foot {
+  float: left;
+  width: 1200px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  margin: 0 auto;
 }
