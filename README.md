@@ -19,6 +19,7 @@
 ## 12-medium-show                          ==== 媒介素养_学院介绍
 ## 13-medium-cooperation                   ==== 媒介素养_合作单位
 ## 14-medium-teacher_curriculum            ==== 媒介素养_教师课程
+## 14-medium-student_curriculum            ==== 媒介素养_学生课程
 ## 15-medium-teacher_curriculum_detail     ==== 媒介素养_教师课程_详情
 ## 16-medium-teacherTeam                   ==== 媒介素养_教师团队
 ## 17-medium-resultsDisplay                ==== 媒介素养_成果展示

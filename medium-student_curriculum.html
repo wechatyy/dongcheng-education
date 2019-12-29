@@ -10,10 +10,11 @@
 	<title>东城区教育新闻网</title>
 	<link rel="stylesheet" href="./css/public.css" />
 	<link rel="stylesheet" href="./css/jquery.page.css" />
-	<link rel="stylesheet" href="./css/medium-resultsDisplay.css" />
+	<link rel="stylesheet" href="./css/medium-teacher_curriculum.css" />
 </head>
 
 <body>
+    <!-- ******* -->
     <!-- 侧边栏 -->
     <div class="boxs" id="span">
         <div>
@@ -21,8 +22,9 @@
             <a href="javascript:;" class="checks"></a>
         </div>
     </div>
-	<!-- 导航 -->
-	<div class="head">
+    <!-- ******* -->
+  <!-- 导航 -->
+  <div class="head">
 		<div class="head-bg">
 				<img  src="./images/banner.png" alt="">
 		</div>
@@ -82,12 +84,12 @@
 				<span></span>
 			</li>
 			<li class="nav_item3"  id="nav_item3">
-				<a href="javascript:;" >课程介绍</a>
+				<a href="javascript:;"  class="tit_active">课程介绍</a>
 				<i></i>
-				<span></span>
+				<span class="span_block"></span>
 				<div class="nav_items" id="nav_one">
 					<div><a href="medium-teacher_curriculum.html">教师课程</a></div>
-					<div><a href="medium-student_curriculum.html">学生课程</a></div>
+					<div><a href="">学生课程</a></div>
 				</div>
 			</li>
 			<li>
@@ -96,9 +98,9 @@
 				<span></span>
 			</li>
 			<li>
-				<a href="medium-resultsDisplay.html" class="tit_active">成果展示</a>
+				<a href="medium-resultsDisplay.html">成果展示</a>
 				<i></i>
-				<span class="span_block"></span>
+				<span></span>
 			</li>
 			<li  class="nav_item5" id="nav_item5">
 				<a href="javascript:;">下载中心</a>
@@ -111,44 +113,93 @@
 			</li>
 		</ul>
 
-		<!-- 内容 -->
 		<div class="box_con clearfix">
-			<div class="box_item">
-				<img src="" alt="">
-				<h1>海洋6号深海科考成果丰硕</h1>
-				<p>30日，中国科考船“海洋六号”完成深海地质调查第五航次和大洋41B航次科考任务，返回广东东莞的海洋地质专用码头，结束了历时219天、近3.5万公里的科考航程。</p>
+			<div class="con-box">
+				<div class="bannerss" id="aaa">
+					<p>教师课堂</p>
+				</div>
+				
+				<div class="table_box">
+					<table  id="table_box" cellspacing="0" cellpadding="0" border="1">
+						<tr>
+							<th width="86">序号</th>
+							<th width="380">课程名称</th>
+							<th width="260">课程类型</th>
+							<th width="420">授课单位</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td><p>即兴演讲</p></td>
+							<td>讲授+实践</td>
+							<td>中国教育电视台新声线项目组</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td><p>即兴演讲</p></td>
+							<td>讲授+实践</td>
+							<td>中国教育电视台新声线项目组</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td><p>即兴演讲</p></td>
+							<td>讲授+实践</td>
+							<td>中国教育电视台新声线项目组</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td><p>即兴演讲</p></td>
+							<td>讲授+实践</td>
+							<td>中国教育电视台新声线项目组</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td><p>即兴演讲</p></td>
+							<td>讲授+实践</td>
+							<td>中国教育电视台新声线项目组</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td><p>即兴演讲</p></td>
+							<td>讲授+实践</td>
+							<td>中国教育电视台新声线项目组</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td><p>即兴演讲</p></td>
+							<td>讲授+实践</td>
+							<td>中国教育电视台新声线项目组</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td><p>即兴演讲</p></td>
+							<td>讲授+实践</td>
+							<td>中国教育电视台新声线项目组</td>
+						</tr>
+						<tr>
+							<td>9</td>
+							<td><p>即兴演讲</p></td>
+							<td>讲授+实践</td>
+							<td>中国教育电视台新声线项目组</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td><p>即兴演讲</p></td>
+							<td>讲授+实践</td>
+							<td>中国教育电视台新声线项目组</td>
+						</tr>
+					</table>
+				</div>
+
+
+				<!-- 分页 -->
+				<div class="pages">
+					<div class="box_foot">
+						<div id="page"></div>
+					</div>
+				</div>
 			</div>
-			<div class="box_item">
-				<img src="" alt="">
-				<h1>海洋6号深海科考成果丰硕</h1>
-				<p>30日，中国科考船“海洋六号”完成深海地质调查第五航次和大洋41B航次科考任务，返回广东东莞的海洋地质专用码头，结束了历时219天、近3.5万公里的科考航程。</p>
-			</div>
-			<div class="box_item">
-				<img src="" alt="">
-				<h1>海洋6号深海科考成果丰硕</h1>
-				<p>30日，中国科考船“海洋六号”完成深海地质调查第五航次和大洋41B航次科考任务，返回广东东莞的海洋地质专用码头，结束了历时219天、近3.5万公里的科考航程。</p>
-			</div>
-			<div class="box_item">
-				<img src="" alt="">
-				<h1>海洋6号深海科考成果丰硕</h1>
-				<p>30日，中国科考船“海洋六号”完成深海地质调查第五航次和大洋41B航次科考任务，返回广东东莞的海洋地质专用码头，结束了历时219天、近3.5万公里的科考航程。</p>
-			</div>
-			<div class="box_item">
-				<img src="" alt="">
-				<h1>海洋6号深海科考成果丰硕</h1>
-				<p>30日，中国科考船“海洋六号”完成深海地质调查第五航次和大洋41B航次科考任务，返回广东东莞的海洋地质专用码头，结束了历时219天、近3.5万公里的科考航程。</p>
-			</div>
-			<div class="box_item">
-				<img src="" alt="">
-				<h1>海洋6号深海科考成果丰硕</h1>
-				<p>30日，中国科考船“海洋六号”完成深海地质调查第五航次和大洋41B航次科考任务，返回广东东莞的海洋地质专用码头，结束了历时219天、近3.5万公里的科考航程。</p>
-			</div>
-			<!-- 分页 -->
-			<div class="box_foot">
-				<div id="page"></div>
-			</div>
+
 		</div>
-		
 	</div>
 	
 	<div class="foot clearfix">
@@ -186,6 +237,19 @@
 			activeClass: "activP", //active 类样式定义
 			callBack: function (page) {}
 		});
+
+		// table tr tab
+		// 点击选中 再次点击还原
+		$('#table_box tr').click(function () { $(this).toggleClass('tr_active')})
+		
+		// 点击选中当前
+		// $("#table_box tr").click(function(){ //给每个tr 绑定点击事件 主要锁定每个tr
+		// 	var trs = $(this).parent().find('tr'); //获取所有tr
+		// 	if(trs.hasClass("tr_active")){ //判断这些tr 有没有Class ‘on’’
+		// 		trs.removeClass("tr_active");//把class on 移除
+		// 	}
+		// 	$(this).addClass("tr_active");//点击的tr 添加 on class 用于改变样式
+		// });
 	});
 </script>
 </html>
