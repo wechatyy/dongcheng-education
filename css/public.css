@@ -130,7 +130,7 @@ body{
 .head {
   position: relative;
   background: url('../images/banner.png') no-repeat top center;
-  background-size: 1920px 314;
+  background-size: 1920px 314px;
   /* height: 374px; */
   min-width: 1200px;
   margin: 0 auto;
@@ -285,7 +285,7 @@ body{
 
 .foot {
   max-width:1920px;
-  height:230px;
+  height:250px;
   background:rgba(255,255,255,1);
 }
 .foot-content{
