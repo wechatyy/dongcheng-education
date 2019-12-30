@@ -42,20 +42,20 @@
 										<a href="video.html">东教视频</a>
 										<span></span>
 										<div id="video-nav-item" class="nav_child">
-												<a href="javascript:;">师者印象</a>
-												<a href="javascript:;">东方教育</a>
-												<a href="javascript:;">歌华有线</a>
-												<a href="javascript:;">百年来校</a>
-												<a href="javascript:;">直播</a>
+											<a href="video-list.html">师者印象</a>
+											<a href="video-list.html">东方教育</a>
+											<a href="video-list.html">歌华有线</a>
+											<a href="video-list.html">百年来校</a>
+											<a href="video-list.html">直播</a>
 										</div>
 								</li>
 								<li id="story-nav">
 										<a href="story-list.html">图片故事</a>
 										<span></span>
 										<div id="story-nav-item" class="nav_child">
-												<a href="javascript:;">魅力校园</a>
-												<a href="javascript:;">名师名校长</a>
-												<a href="javascript:;">图片新闻</a>
+											<a href="story-list-more.html">魅力校园</a>
+											<a href="story-list-more.html">名师名校长</a>
+											<a href="story-list-more.html">图片新闻</a>
 										</div>
 								</li>
 								<li class="active"><a href="medium-download-doc.html">媒介素养</a></li>
@@ -238,18 +238,9 @@
 			callBack: function (page) {}
 		});
 
-		// table tr tab
-		// 点击选中 再次点击还原
-		$('#table_box tr').click(function () { $(this).toggleClass('tr_active')})
-		
-		// 点击选中当前
-		// $("#table_box tr").click(function(){ //给每个tr 绑定点击事件 主要锁定每个tr
-		// 	var trs = $(this).parent().find('tr'); //获取所有tr
-		// 	if(trs.hasClass("tr_active")){ //判断这些tr 有没有Class ‘on’’
-		// 		trs.removeClass("tr_active");//把class on 移除
-		// 	}
-		// 	$(this).addClass("tr_active");//点击的tr 添加 on class 用于改变样式
-		// });
+		$('#table_box tr').click(function () { 
+			window.location.href='medium-teacher_curriculum_detail.html';
+		})
 	});
 </script>
 </html>

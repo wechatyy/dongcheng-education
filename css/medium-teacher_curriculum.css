@@ -122,14 +122,11 @@ table {
 table tr th, table tr td {
   border:1px solid #ccc; 
 }
-/* table tr{
-  cursor: pointer;
-} */
-table tr td p{
+table tr{
   cursor: pointer;
 }
-table tr td p:hover{
-  color: red;
+table tr:hover{
+  background-color: #fcd9d7;
 }
 .tr_active{
   background-color: #fcd9d7;
@@ -140,6 +137,7 @@ table td,th{
   padding-bottom: 10px;
   color: #333333;
 } 
+
 table td img{
   display: inline-block;
   width: 10px;
