@@ -117,19 +117,25 @@ video:focus {
   cursor: pointer;
 }
 .video_tab_con .tab div a:last-child{
-  display: inline-block;
+  /* display: inline-block; */
   width: 100%;
 	font-size: 14px;
   color: #333333;
-  overflow: hidden;
   margin-top: 10px;
-  text-overflow: -o-ellipsis-lastline;
+  /* text-overflow: -o-ellipsis-lastline;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   line-clamp: 2;
+  -webkit-box-orient: vertical; */
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  font-family: MicrosoftYaHei;
 }
 
 .section {
