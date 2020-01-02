@@ -407,6 +407,10 @@ body{
   bottom:0;
   color:#fff;
   transition:opacity .3s .3s;
+  float: left;
+  position: absolute;
+  left:0;
+  bottom:0;
 }
 .swiper-slide-active .detail{
   opacity:1;

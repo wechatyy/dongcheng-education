@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .wrap {
+            width: 200px;
+            height: 40px;
+            line-height: 20px;
+            overflow: hidden;
+        }
+        
+        .wrap .text {
+            float: right;
+            margin-left: -5px;
+            width: 100%;
+            word-break: break-all;
+        }
+        
+        .wrap::before {
+            float: left;
+            width: 5px;
+            content: '';
+            height: 40px;
+        }
+        
+        .wrap::after {
+            float: right;
+            content: "...";
+            height: 20px;
+            line-height: 20px;
+            /* 为三个省略号的宽度 */
+            width: 3em;
+            /* 使盒子不占位置 */
+            margin-left: -3em;
+            /* 移动省略号位置 */
+            position: relative;
+            left: 100%;
+            top: -20px;
+            padding-right: 5px;
+            background-color: #FFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <a href="" class="text">
+            That's the bas That's the bas That's the bas That's the bas That's the bas That's the bas That's the bas That's the bas That's the bas That's the bas That's the bas
+        </a>
+    </div>
+</body>
+</html>
